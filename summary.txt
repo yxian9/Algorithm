@@ -1,0 +1,295 @@
+
+1448 goodnode
+class Solution:
+    def goodNodes(self, root: Optional[TreeNode]) -> int:
+        target = 0
+        def dfs(node: Optional[TreeNode], mx: int) :
+            nonlocal target
+            if node is None:
+                return 
+            if node.val >= mx:
+                target += 1
+            curMax = max(mx, node.val)
+            dfs(node.left, curMax)
+            dfs(node.right, curMax)
+        dfs(root, -inf)
+        return target
+
+// bottom up approach
+func dfs(root *TreeNode, mx int) int {
+	if root == nil {
+		return 0 // base case
+	}
+	curMx := max(root.Val, mx) // pass info down
+	// two post process step
+	l := dfs(root.Left, curMx)
+	r := dfs(root.Right, curMx)
+
+	if root.Val >= mx {
+		return l + r + 1 // pass info up
+	}
+	return l + r
+}
+func goodNodes(root *TreeNode) int {
+	return dfs(root, math.MinInt)
+}
+
+// pre traverse top down. it doesn't work for some problem, like coin change.
+func goodNodes(root *TreeNode) int {
+  goodNodesCount := 0
+	var dfs func(node *TreeNode, mx int)
+	dfs = func(node *TreeNode, mx int) {
+		if node == nil {
+			return
+		}
+		if node.Val >= mx {
+			goodNodesCount++
+		}
+		curMx := max(node.Val, mx)
+		dfs(node.Left, curMx)
+		dfs(node.Right, curMx)
+	}
+	dfs(root, math.MinInt)
+    return goodNodesCount
+}
+
+572 subset tree. two round dfs. pay attention to second round
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func isSame(t1 *TreeNode, t2 *TreeNode) bool {
+	if t1 == nil && t2 == nil {
+		return true
+	}
+	if t1 == nil || t2 == nil {
+		return false
+	}
+	if t1.Val == t2.Val && isSame(t1.Left, t2.Left) && isSame(t1.Right, t2.Right) {
+		return true
+	}
+	return false
+}
+
+func isSubtree(root *TreeNode, subRoot *TreeNode) bool {
+  if root == nil {
+    return false
+  }
+  if isSame(root, subRoot){
+    return true
+  }
+  if isSubtree(root.Left, subRoot) || isSubtree(root.Right, subRoot) {
+    return true
+  }
+  // don't manuall check child node. use recursive
+  // if isSame(root.Left, subRoot) {
+  //   return true
+  // }
+  // if isSame(root.Right, subRoot) {
+  //   return true
+  // }
+  return false
+}
+
+
+// incorrect one
+func isSame(t1 *TreeNode, t2 *TreeNode) bool {
+	if t1 == nil && t2 == nil {
+		return true
+	}
+	if t1 == nil || t2 == nil {
+		return false
+	}
+	if t1.Val == t2.Val && isSame(t1.Left, t2.Left) && isSame(t1.Right, t2.Right) {
+		return true
+	}
+	return false
+}
+
+func isSubtree(root *TreeNode, subRoot *TreeNode) bool {
+  if root == nil {
+    return false
+  }
+  if isSame(root, subRoot){
+    return true
+  }
+  if isSame(root.Left, subRoot) {
+    return true
+  }
+  if isSame(root.Right, subRoot) {
+    return true
+  }
+  return false
+}
+
+function check(t1: TreeNode | null, t2: TreeNode | null): boolean {
+  if (t1 === null && t2 === null) return true;
+  if (t1 === null || t2 === null) return false;
+  if ( t1.val === t2.val && check(t1.left, t2.left) && check(t1.right, t2.right)){
+    return true
+  }
+  return false
+}
+function isSubtree(root: TreeNode | null, subRoot: TreeNode | null): boolean {
+  if ( root === null) return false
+  if (check(root, subRoot)) return true
+  return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot)
+}
+
+105  // classic devide conqueue
+function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
+  const inorderM = new Map<number, number>();
+  for (const [idx, val] of inorder.entries()) {
+    inorderM.set(val, idx);
+  }
+
+  function dfsBuild(
+    preStart: number,
+    inStart: number,
+    length: number,
+  ): TreeNode | null {
+    if (length === 0) return null;
+    const rootVal = preorder[preStart];
+    const inorderNeedle = inorderM.get(rootVal)!;
+    const leftSize = inorderNeedle - inStart;
+    const rightSize = length - leftSize - 1;
+
+    return new TreeNode(
+      rootVal,
+      dfsBuild(preStart + 1, inStart, leftSize),
+      dfsBuild(preStart + 1 + leftSize, inorderNeedle + 1, rightSize),
+    );
+  }
+  return dfsBuild(0, 0, preorder.length);
+}
+// use capture to type 2 less parameters
+function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
+  const inorderM = new Map<number, number>();
+  for (const [idx, val] of inorder.entries()) {
+    inorderM.set(val, idx);
+  }
+
+  function dfsBuild(
+    preStart: number,
+    inStart: number,
+    length: number,
+  ): TreeNode | null {
+    if (length === 0) return null;
+    const rootVal = preorder[preStart];
+    const inorderNeedle = inorderM.get(rootVal)!;
+    const leftSize = inorderNeedle - inStart;
+    const rightSize = length - leftSize - 1;
+
+    return new TreeNode(
+      rootVal,
+      dfsBuild(preStart + 1, inStart, leftSize),
+      dfsBuild(preStart + 1 + leftSize, inorderNeedle + 1, rightSize),
+    );
+  }
+  return dfsBuild(0, 0, preorder.length);
+}
+
+17 
+
+var (
+	res      []string
+	path     []rune // can not be init
+	keyboard = map[rune]string{
+		'2': "abc",
+		'3': "def",
+		'4': "ghi",
+		'5': "jkl",
+		'6': "mno",
+		'7': "pqrs",
+		'8': "tuv",
+		'9': "wxyz",
+	}
+)
+
+func dfs(digits string) {
+	if len(path) == len(digits) {
+		res = append(res, string(path))
+		return
+	}
+  curRune := rune(digits[len(path) ])
+  for _, r := range keyboard[curRune] {
+    path  = append(path, r)
+    dfs(digits)
+    path  = path[: len(path) - 1]
+  }
+}
+
+func letterCombinations(digits string) []string {
+	res = []string{}
+	path = []rune{}
+  if digits == "" { // required. otherwise, the dfs append will push a empty string into list
+    return res
+  }
+	dfs(digits)
+	return res
+}
+
+// python version  try different version to make the path clear
+// 
+MAPPING = "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
+
+
+class Solution:
+    def dfs(self, res: List[str], path: List[str], digits: str):
+        if len(path) == len(digits):
+            res.append("".join(path))
+            return
+        curStr = MAPPING[int(digits[len(path)])]
+        for c in curStr:
+            path.append(c)
+            self.dfs(res, path, digits)
+            path.pop()
+
+    def letterCombinations(self, digits: str) -> List[str]:
+        res, path = [], []
+        if digits == "":
+            return res
+        self.dfs(res, path, digits)
+        return res
+
+235. 
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+  if root == nil {
+    return root
+  } // will never happend
+  if root.Val > p.Val && root.Val > q.Val {
+    return lowestCommonAncestor(root.Left, p, q)
+  }
+  if root.Val < p.Val && root.Val < q.Val {
+    return lowestCommonAncestor(root.Right, p, q)
+  }
+  return root // cant be nil
+}
+
+17 
+class Solution:
+    def __init__(self) -> None:
+        self.res = []
+        self.mapping = "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
+
+    def dfs(self, digits: str, path: list[str]):
+        if len(path) == len(digits):
+            self.res.append("".join(path))
+            return
+        for c in self.mapping[int(digits[len(path)])]:
+            path.append(c)
+            self.dfs(digits, path)
+            path.pop()
+
+    def letterCombinations(self, digits: str) -> List[str]:
+        if digits == "":
+            return []
+        self.dfs(digits, [])
+        return self.res
+
+
+
