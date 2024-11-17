@@ -48,19 +48,13 @@ var ignoredPaths = map[string]bool{
 
 // shouldIgnore checks if a path should be ignored
 func shouldIgnore(path string) bool {
-	// Get the base name of the path
 	base := filepath.Base(path)
-	
-	// Check if it's in the ignored paths
 	if ignoredPaths[base] {
 		return true
 	}
-	
-	// Check if it's a hidden file/directory
 	if strings.HasPrefix(base, ".") {
 		return true
 	}
-	
 	return false
 }
 
@@ -84,10 +78,39 @@ func getBaseName(filename string) string {
 	return strings.TrimSuffix(filename, filepath.Ext(filename))
 }
 
+// wrapText wraps text to specified width maintaining word boundaries
+func wrapText(text string, width int) []string {
+	if len(text) <= width {
+		return []string{text}
+	}
+
+	words := strings.Fields(text)
+	if len(words) == 0 {
+		return []string{}
+	}
+
+	var lines []string
+	currentLine := words[0]
+
+	for _, word := range words[1:] {
+		if len(currentLine)+1+len(word) <= width {
+			currentLine += " " + word
+		} else {
+			lines = append(lines, currentLine)
+			currentLine = word
+		}
+	}
+	lines = append(lines, currentLine)
+
+	return lines
+}
+
 // generateMarkdown creates the markdown content with tables
 func generateMarkdown(sections []SectionInfo) string {
 	var md strings.Builder
 	md.WriteString("# Project Structure\n\n")
+
+	const fileNameWidth = 80
 
 	for _, section := range sections {
 		if section.Name == "." {
@@ -96,7 +119,7 @@ func generateMarkdown(sections []SectionInfo) string {
 			md.WriteString(fmt.Sprintf("## %s\n\n", section.Name))
 		}
 
-		// Create table header
+		// Write table header
 		md.WriteString("| File Name | Go | Python | TypeScript |\n")
 		md.WriteString("|-----------|----|---------|-----------|\n")
 
@@ -116,20 +139,31 @@ func generateMarkdown(sections []SectionInfo) string {
 			tsLink := ""
 
 			if group.GoFile != nil {
-				goLink = fmt.Sprintf("[%s](%s)", "✓", group.GoFile.Path)
+				goLink = fmt.Sprintf("[✓](%s)", group.GoFile.Path)
 			}
 			if group.PyFile != nil {
-				pyLink = fmt.Sprintf("[%s](%s)", "✓", group.PyFile.Path)
+				pyLink = fmt.Sprintf("[✓](%s)", group.PyFile.Path)
 			}
 			if group.TsFile != nil {
-				tsLink = fmt.Sprintf("[%s](%s)", "✓", group.TsFile.Path)
+				tsLink = fmt.Sprintf("[✓](%s)", group.TsFile.Path)
 			}
 
-			md.WriteString(fmt.Sprintf("| %s | %s | %s | %s |\n",
-				baseName,
-				goLink,
-				pyLink,
-				tsLink))
+			// Wrap the basename if it's too long
+			lines := wrapText(baseName, fileNameWidth)
+			for i, line := range lines {
+				if i == 0 {
+					// First line includes the links
+					md.WriteString(fmt.Sprintf("| %s | %s | %s | %s |\n",
+						line+strings.Repeat(" ", fileNameWidth-len(line)),
+						goLink,
+						pyLink,
+						tsLink))
+				} else {
+					// Continuation lines only include the wrapped text
+					md.WriteString(fmt.Sprintf("| %s |  |  |  |\n",
+						line+strings.Repeat(" ", fileNameWidth-len(line))))
+				}
+			}
 		}
 		md.WriteString("\n")
 	}
@@ -151,7 +185,6 @@ func main() {
 			return err
 		}
 
-		// Skip ignored directories and files
 		if shouldIgnore(path) {
 			if info.IsDir() {
 				return filepath.SkipDir
