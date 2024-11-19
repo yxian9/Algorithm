@@ -1,21 +1,21 @@
-# Project Structure
+# Algorithm
 
 ## backtracking
 
-| File Name | Go | Python | TypeScript |
+|  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 17.letter-combinations-of-a-phone-number                                         | [✓](backtracking/17.letter-combinations-of-a-phone-number.go) | [✓](backtracking/17.letter-combinations-of-a-phone-number.py) |  |
 | 78.subsets                                                                       | [✓](backtracking/78.subsets.go) | [✓](backtracking/78.subsets.py) | [✓](backtracking/78.subsets.ts) |
 
 ## bfs
 
-| File Name | Go | Python | TypeScript |
+|  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 5.longest-palindromic-substring                                                  | [✓](bfs/5.longest-palindromic-substring.go) | [✓](bfs/5.longest-palindromic-substring.py) |  |
 
 ## dfs
 
-| File Name | Go | Python | TypeScript |
+|  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 104.maximum-depth-of-binary-tree                                                 | [✓](dfs/104.maximum-depth-of-binary-tree.go) | [✓](dfs/104.maximum-depth-of-binary-tree.py) |  |
 | 105.construct-binary-tree-from-preorder-and-inorder-traversal                    | [✓](dfs/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](dfs/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](dfs/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
@@ -30,23 +30,15 @@
 | 971.flip-binary-tree-to-match-preorder-traversal                                 |  |  | [✓](dfs/971.flip-binary-tree-to-match-preorder-traversal.ts) |
 | 98.validate-binary-search-tree                                                   | [✓](dfs/98.validate-binary-search-tree.go) | [✓](dfs/98.validate-binary-search-tree.py) |  |
 
-## Root Directory
-
-| File Name | Go | Python | TypeScript |
-|-----------|----|---------|-----------|
-| fileUpdate                                                                       | [✓](fileUpdate.go) |  |  |
-| readme                                                                           | [✓](readme.go) |  |  |
-| type                                                                             |  | [✓](type.py) | [✓](type.ts) |
-
 ## others
 
-| File Name | Go | Python | TypeScript |
+|  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 146.lru-cache                                                                    | [✓](others/146.lru-cache.go) |  |  |
 
 ## two_points
 
-| File Name | Go | Python | TypeScript |
+|  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 1.two-sum                                                                        | [✓](two_points/1.two-sum.go) | [✓](two_points/1.two-sum.py) | [✓](two_points/1.two-sum.ts) |
 

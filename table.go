@@ -32,18 +32,15 @@ type SectionInfo struct {
 
 // ignoredPaths contains paths and files to ignore
 var ignoredPaths = map[string]bool{
-	".git":              true,
-	"node_modules":      true,
-	".idea":             true,
-	".vscode":           true,
-	"vendor":            true,
-	"__pycache__":       true,
-	".gitignore":        true,
-	"README.md":         true,
-	".env":              true,
-	"venv":              true,
-	"dist":              true,
-	"build":             true,
+	".git":        true,
+	".vscode":     true,
+	"__pycache__": true,
+	".gitignore":  true,
+	"README.md":   true,
+	".env":        true,
+	"venv":        true,
+	"dist":        true,
+	"build":       true,
 }
 
 // shouldIgnore checks if a path should be ignored
@@ -63,13 +60,13 @@ func determineLanguage(filename string) string {
 	ext := strings.ToLower(filepath.Ext(filename))
 	switch ext {
 	case ".go":
-		return "Go"
+		return "go"
 	case ".py":
-		return "Python"
+		return "py"
 	case ".ts":
-		return "TypeScript"
+		return "ts"
 	default:
-		return "Unknown"
+		return "other"
 	}
 }
 
@@ -108,19 +105,20 @@ func wrapText(text string, width int) []string {
 // generateMarkdown creates the markdown content with tables
 func generateMarkdown(sections []SectionInfo) string {
 	var md strings.Builder
-	md.WriteString("# Project Structure\n\n")
+	md.WriteString("# Algorithm\n\n")
 
 	const fileNameWidth = 80
 
 	for _, section := range sections {
 		if section.Name == "." {
-			md.WriteString("## Root Directory\n\n")
+			continue
+			// md.WriteString("## Root Directory\n\n")
 		} else {
 			md.WriteString(fmt.Sprintf("## %s\n\n", section.Name))
 		}
 
 		// Write table header
-		md.WriteString("| File Name | Go | Python | TypeScript |\n")
+		md.WriteString("|  name | go | py | ts |\n")
 		md.WriteString("|-----------|----|---------|-----------|\n")
 
 		// Get all base names and sort them
@@ -133,7 +131,7 @@ func generateMarkdown(sections []SectionInfo) string {
 		// Add table rows
 		for _, baseName := range baseNames {
 			group := section.FileGroups[baseName]
-			
+
 			goLink := ""
 			pyLink := ""
 			tsLink := ""
@@ -174,7 +172,7 @@ func generateMarkdown(sections []SectionInfo) string {
 func main() {
 	sections := make([]SectionInfo, 0)
 	sectionMap := make(map[string]*SectionInfo)
-	
+
 	currentDir, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
@@ -232,18 +230,17 @@ func main() {
 
 			// Add file to appropriate language slot
 			switch language {
-			case "Go":
+			case "go":
 				group.GoFile = fileInfo
-			case "Python":
+			case "py":
 				group.PyFile = fileInfo
-			case "TypeScript":
+			case "ts":
 				group.TsFile = fileInfo
 			}
 		}
 
 		return nil
 	})
-
 	if err != nil {
 		log.Fatal(err)
 	}
