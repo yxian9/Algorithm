@@ -7,6 +7,7 @@
 | 17.letter-combinations-of-a-phone-number                                         | [✓](backtracking/17.letter-combinations-of-a-phone-number.go) | [✓](backtracking/17.letter-combinations-of-a-phone-number.py) |  |
 | 39.combination-sum                                                               | [✓](backtracking/39.combination-sum.go) | [✓](backtracking/39.combination-sum.py) | [✓](backtracking/39.combination-sum.ts) |
 | 40.combination-sum-ii                                                            | [✓](backtracking/40.combination-sum-ii.go) | [✓](backtracking/40.combination-sum-ii.py) | [✓](backtracking/40.combination-sum-ii.ts) |
+| 46.permutations                                                                  | [✓](backtracking/46.permutations.go) | [✓](backtracking/46.permutations.py) | [✓](backtracking/46.permutations.ts) |
 | 78.subsets                                                                       | [✓](backtracking/78.subsets.go) | [✓](backtracking/78.subsets.py) | [✓](backtracking/78.subsets.ts) |
 
 ## bfs
