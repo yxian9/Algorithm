@@ -5,6 +5,7 @@
 | File Name | Go | Python | TypeScript |
 |-----------|----|---------|-----------|
 | 17.letter-combinations-of-a-phone-number                                         | [✓](backtracking/17.letter-combinations-of-a-phone-number.go) | [✓](backtracking/17.letter-combinations-of-a-phone-number.py) |  |
+| 78.subsets                                                                       | [✓](backtracking/78.subsets.go) | [✓](backtracking/78.subsets.py) | [✓](backtracking/78.subsets.ts) |
 
 ## bfs
 
