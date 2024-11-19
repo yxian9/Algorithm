@@ -55,19 +55,11 @@ func shouldIgnore(path string) bool {
 	return false
 }
 
-// determineLanguage returns the programming language based on file extension
-func determineLanguage(filename string) string {
+// fileExtension returns the programming language based on file extension
+func fileExtension(filename string) string {
 	ext := strings.ToLower(filepath.Ext(filename))
-	switch ext {
-	case ".go":
-		return "go"
-	case ".py":
-		return "py"
-	case ".ts":
-		return "ts"
-	default:
-		return "other"
-	}
+	ext = strings.TrimPrefix(ext, ".")
+	return ext
 }
 
 // getBaseName returns the filename without extension
@@ -197,7 +189,7 @@ func main() {
 
 		dir := filepath.Dir(relPath)
 		if !info.IsDir() {
-			language := determineLanguage(info.Name())
+			language := fileExtension(info.Name())
 			if language == "Unknown" {
 				return nil
 			}
