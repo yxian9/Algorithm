@@ -1,47 +1,48 @@
 # Algorithm
 
-## backtracking
+## BFS
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 17.letter-combinations-of-a-phone-number                                         | [✓](backtracking/17.letter-combinations-of-a-phone-number.go) | [✓](backtracking/17.letter-combinations-of-a-phone-number.py) |  |
-| 39.combination-sum                                                               | [✓](backtracking/39.combination-sum.go) | [✓](backtracking/39.combination-sum.py) | [✓](backtracking/39.combination-sum.ts) |
-| 40.combination-sum-ii                                                            | [✓](backtracking/40.combination-sum-ii.go) | [✓](backtracking/40.combination-sum-ii.py) | [✓](backtracking/40.combination-sum-ii.ts) |
-| 46.permutations                                                                  | [✓](backtracking/46.permutations.go) | [✓](backtracking/46.permutations.py) | [✓](backtracking/46.permutations.ts) |
-| 78.subsets                                                                       | [✓](backtracking/78.subsets.go) | [✓](backtracking/78.subsets.py) | [✓](backtracking/78.subsets.ts) |
+| 5.longest-palindromic-substring                                                  | [✓](BFS/5.longest-palindromic-substring.go) | [✓](BFS/5.longest-palindromic-substring.py) |  |
 
-## bfs
+## Backtracking
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 5.longest-palindromic-substring                                                  | [✓](bfs/5.longest-palindromic-substring.go) | [✓](bfs/5.longest-palindromic-substring.py) |  |
+| 17.letter-combinations-of-a-phone-number                                         | [✓](Backtracking/17.letter-combinations-of-a-phone-number.go) | [✓](Backtracking/17.letter-combinations-of-a-phone-number.py) |  |
+| 39.combination-sum                                                               | [✓](Backtracking/39.combination-sum.go) | [✓](Backtracking/39.combination-sum.py) | [✓](Backtracking/39.combination-sum.ts) |
+| 40.combination-sum-ii                                                            | [✓](Backtracking/40.combination-sum-ii.go) | [✓](Backtracking/40.combination-sum-ii.py) | [✓](Backtracking/40.combination-sum-ii.ts) |
+| 46.permutations                                                                  | [✓](Backtracking/46.permutations.go) | [✓](Backtracking/46.permutations.py) | [✓](Backtracking/46.permutations.ts) |
+| 47.permutations-ii                                                               | [✓](Backtracking/47.permutations-ii.go) | [✓](Backtracking/47.permutations-ii.py) | [✓](Backtracking/47.permutations-ii.ts) |
+| 78.subsets                                                                       | [✓](Backtracking/78.subsets.go) | [✓](Backtracking/78.subsets.py) | [✓](Backtracking/78.subsets.ts) |
 
-## dfs
-
-|  name | go | py | ts |
-|-----------|----|---------|-----------|
-| 104.maximum-depth-of-binary-tree                                                 | [✓](dfs/104.maximum-depth-of-binary-tree.go) | [✓](dfs/104.maximum-depth-of-binary-tree.py) |  |
-| 105.construct-binary-tree-from-preorder-and-inorder-traversal                    | [✓](dfs/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](dfs/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](dfs/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
-| 106.construct-binary-tree-from-inorder-and-postorder-traversal                   | [✓](dfs/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
-| 110.balanced-binary-tree                                                         | [✓](dfs/110.balanced-binary-tree.go) | [✓](dfs/110.balanced-binary-tree.py) | [✓](dfs/110.balanced-binary-tree.ts) |
-| 1448.count-good-nodes-in-binary-tree                                             | [✓](dfs/1448.count-good-nodes-in-binary-tree.go) | [✓](dfs/1448.count-good-nodes-in-binary-tree.py) | [✓](dfs/1448.count-good-nodes-in-binary-tree.ts) |
-| 206.reverse-linked-list                                                          |  |  | [✓](dfs/206.reverse-linked-list.ts) |
-| 235.lowest-common-ancestor-of-a-binary-search-tree                               | [✓](dfs/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
-| 236.lowest-common-ancestor-of-a-binary-tree                                      | [✓](dfs/236.lowest-common-ancestor-of-a-binary-tree.go) |  |  |
-| 572.subtree-of-another-tree                                                      | [✓](dfs/572.subtree-of-another-tree.go) | [✓](dfs/572.subtree-of-another-tree.py) | [✓](dfs/572.subtree-of-another-tree.ts) |
-| 701.insert-into-a-binary-search-tree                                             | [✓](dfs/701.insert-into-a-binary-search-tree.go) | [✓](dfs/701.insert-into-a-binary-search-tree.py) |  |
-| 971.flip-binary-tree-to-match-preorder-traversal                                 |  |  | [✓](dfs/971.flip-binary-tree-to-match-preorder-traversal.ts) |
-| 98.validate-binary-search-tree                                                   | [✓](dfs/98.validate-binary-search-tree.go) | [✓](dfs/98.validate-binary-search-tree.py) |  |
-
-## others
+## DFS
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 146.lru-cache                                                                    | [✓](others/146.lru-cache.go) |  |  |
+| 104.maximum-depth-of-binary-tree                                                 | [✓](DFS/104.maximum-depth-of-binary-tree.go) | [✓](DFS/104.maximum-depth-of-binary-tree.py) |  |
+| 105.construct-binary-tree-from-preorder-and-inorder-traversal                    | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
+| 106.construct-binary-tree-from-inorder-and-postorder-traversal                   | [✓](DFS/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
+| 110.balanced-binary-tree                                                         | [✓](DFS/110.balanced-binary-tree.go) | [✓](DFS/110.balanced-binary-tree.py) | [✓](DFS/110.balanced-binary-tree.ts) |
+| 1448.count-good-nodes-in-binary-tree                                             | [✓](DFS/1448.count-good-nodes-in-binary-tree.go) | [✓](DFS/1448.count-good-nodes-in-binary-tree.py) | [✓](DFS/1448.count-good-nodes-in-binary-tree.ts) |
+| 206.reverse-linked-list                                                          |  |  | [✓](DFS/206.reverse-linked-list.ts) |
+| 235.lowest-common-ancestor-of-a-binary-search-tree                               | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
+| 236.lowest-common-ancestor-of-a-binary-tree                                      | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  |  |
+| 572.subtree-of-another-tree                                                      | [✓](DFS/572.subtree-of-another-tree.go) | [✓](DFS/572.subtree-of-another-tree.py) | [✓](DFS/572.subtree-of-another-tree.ts) |
+| 701.insert-into-a-binary-search-tree                                             | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
+| 971.flip-binary-tree-to-match-preorder-traversal                                 |  |  | [✓](DFS/971.flip-binary-tree-to-match-preorder-traversal.ts) |
+| 98.validate-binary-search-tree                                                   | [✓](DFS/98.validate-binary-search-tree.go) | [✓](DFS/98.validate-binary-search-tree.py) |  |
 
-## two_points
+## Others
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 1.two-sum                                                                        | [✓](two_points/1.two-sum.go) | [✓](two_points/1.two-sum.py) | [✓](two_points/1.two-sum.ts) |
+| 146.lru-cache                                                                    | [✓](Others/146.lru-cache.go) |  |  |
+
+## Two_points
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 1.two-sum                                                                        | [✓](Two_points/1.two-sum.go) | [✓](Two_points/1.two-sum.py) | [✓](Two_points/1.two-sum.ts) |
 
