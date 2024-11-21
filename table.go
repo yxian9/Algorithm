@@ -86,10 +86,9 @@ func generateMarkdown(sections []SectionInfo) string {
 	for _, section := range sections {
 		if section.Name == "." {
 			continue
-			// md.WriteString("## Root Directory\n\n")
-		} else {
-			md.WriteString(fmt.Sprintf("## %s\n\n", section.Name))
 		}
+
+		md.WriteString(fmt.Sprintf("## %s\n\n", section.Name))
 
 		// Write table header
 		md.WriteString("|  name | go | py | ts |\n")
