@@ -72,26 +72,8 @@ func wrapText(text string, width int) []string {
 	if len(text) <= width {
 		return []string{text}
 	}
-
-	words := strings.Fields(text)
-	if len(words) == 0 {
-		return []string{}
-	}
-
-	var lines []string
-	currentLine := words[0]
-
-	for _, word := range words[1:] {
-		if len(currentLine)+1+len(word) <= width {
-			currentLine += " " + word
-		} else {
-			lines = append(lines, currentLine)
-			currentLine = word
-		}
-	}
-	lines = append(lines, currentLine)
-
-	return lines
+	truncated := text[:width-3] + "..."
+	return []string{truncated}
 }
 
 // generateMarkdown creates the markdown content with tables
@@ -144,14 +126,14 @@ func generateMarkdown(sections []SectionInfo) string {
 				if i == 0 {
 					// First line includes the links
 					md.WriteString(fmt.Sprintf("| %s | %s | %s | %s |\n",
-						line+strings.Repeat(" ", fileNameWidth-len(line)),
+						line,
 						goLink,
 						pyLink,
 						tsLink))
 				} else {
 					// Continuation lines only include the wrapped text
 					md.WriteString(fmt.Sprintf("| %s |  |  |  |\n",
-						line+strings.Repeat(" ", fileNameWidth-len(line))))
+						line))
 				}
 			}
 		}
