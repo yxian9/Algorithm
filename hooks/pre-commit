@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# update readme.md table
+./table
+
+# Check if the script executed successfully
+if [ $? -ne 0 ]; then
+  echo "Pre-commit table create failed. Aborting commit."
+  exit 1
+fi
