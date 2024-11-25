@@ -12,6 +12,7 @@ func combinationSum(candidates []int, target int) [][]int {
 		if idx == n || total > target {
 			return
 		}
+		// interesting. although we donot constrain level,(can repick), still need idx to constran not chose
 		dfs(idx+1, total)
 		cur := candidates[idx]
 		path = append(path, cur)
