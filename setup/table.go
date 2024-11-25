@@ -41,6 +41,7 @@ var ignoredPaths = map[string]bool{
 	"venv":        true,
 	"dist":        true,
 	"build":       true,
+	"hooks":       true,
 }
 
 // shouldIgnore checks if a path should be ignored
