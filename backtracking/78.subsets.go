@@ -43,3 +43,23 @@ func subsets1(nums []int) [][]int {
 	return res
 }
 
+func subsets3(nums []int) [][]int {
+	res, path, seen := [][]int{}, []int{}, make([]bool, len(nums))
+	n := len(nums)
+	var dfs func(int)
+	dfs = func(idx int) {
+		res = append(res, append([]int{}, path...))
+		for i := idx; i < n; i++ {
+			if seen[i] {
+				continue
+			}
+			path = append(path, nums[i])
+			seen[i] = true // use seen, not i+1 to remove order duplicate
+			dfs(i)
+			path = path[:len(path)-1]
+			seen[i] = false
+		}
+	}
+	dfs(0)
+	return res
+}
