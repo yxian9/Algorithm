@@ -55,15 +55,3 @@
 | 1.two-sum | [✓](Two_points/1.two-sum.go) | [✓](Two_points/1.two-sum.py) | [✓](Two_points/1.two-sum.ts) |
 | 7.reverse-integer | [✓](Two_points/7.reverse-integer.go) |  |  |
 
-## setup
-
-|  name | go | py | ts |
-|-----------|----|---------|-----------|
-| build_addhook |  |  |  |
-| deno |  |  |  |
-| fileUpdate | [✓](setup/fileUpdate.go) |  |  |
-| pre-commit |  |  |  |
-| pyproject |  |  |  |
-| table | [✓](setup/table.go) |  |  |
-| type | [✓](setup/type.go) | [✓](setup/type.py) | [✓](setup/type.ts) |
-
