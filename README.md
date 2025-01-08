@@ -4,6 +4,7 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| 1091.shortest-path-in-binary-matrix | [✓](BFS/1091.shortest-path-in-binary-matrix.go) |  |  |
 | 5.longest-palindromic-substring | [✓](BFS/5.longest-palindromic-substring.go) | [✓](BFS/5.longest-palindromic-substring.py) |  |
 
 ## Backtracking
@@ -29,7 +30,7 @@
 | 1448.count-good-nodes-in-binary-tree | [✓](DFS/1448.count-good-nodes-in-binary-tree.go) | [✓](DFS/1448.count-good-nodes-in-binary-tree.py) | [✓](DFS/1448.count-good-nodes-in-binary-tree.ts) |
 | 206.reverse-linked-list |  |  | [✓](DFS/206.reverse-linked-list.ts) |
 | 235.lowest-common-ancestor-of-a-binary-search-tree | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
-| 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  |  |
+| 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.ts) |
 | 572.subtree-of-another-tree | [✓](DFS/572.subtree-of-another-tree.go) | [✓](DFS/572.subtree-of-another-tree.py) | [✓](DFS/572.subtree-of-another-tree.ts) |
 | 701.insert-into-a-binary-search-tree | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
 | 971.flip-binary-tree-to-match-preorder-traversal |  |  | [✓](DFS/971.flip-binary-tree-to-match-preorder-traversal.ts) |
@@ -58,10 +59,11 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| build_addhook |  |  |  |
+| deno |  |  |  |
 | fileUpdate | [✓](setup/fileUpdate.go) |  |  |
 | pre-commit |  |  |  |
 | pyproject |  |  |  |
-| setup_hook |  |  |  |
 | table | [✓](setup/table.go) |  |  |
-| type |  | [✓](setup/type.py) | [✓](setup/type.ts) |
+| type | [✓](setup/type.go) | [✓](setup/type.py) | [✓](setup/type.ts) |
 

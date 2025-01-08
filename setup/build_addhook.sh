@@ -1,10 +1,11 @@
 #!/bin/bash
 
 go build -o table setup/table.go
+go build -o update setup/fileUpdate.go 
 
 # Copy the pre-commit hook into the .git/hooks directory
 HOOK_FILE=".git/hooks/pre-commit"
-SOURCE_HOOK="hooks/pre-commit"
+SOURCE_HOOK="setup/pre-commit"
 
 if [ -f "$SOURCE_HOOK" ]; then
   cp "$SOURCE_HOOK" "$HOOK_FILE"
