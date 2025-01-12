@@ -19,6 +19,12 @@
 | 78.subsets | [✓](Backtracking/78.subsets.go) | [✓](Backtracking/78.subsets.py) | [✓](Backtracking/78.subsets.ts) |
 | 90.subsets-ii | [✓](Backtracking/90.subsets-ii.go) | [✓](Backtracking/90.subsets-ii.py) | [✓](Backtracking/90.subsets-ii.ts) |
 
+## BinarySearch
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 162.find-peak-element | [✓](BinarySearch/162.find-peak-element.go) |  |  |
+
 ## DFS
 
 |  name | go | py | ts |
@@ -31,10 +37,20 @@
 | 206.reverse-linked-list |  |  | [✓](DFS/206.reverse-linked-list.ts) |
 | 235.lowest-common-ancestor-of-a-binary-search-tree | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
 | 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.ts) |
+| 543.diameter-of-binary-tree | [✓](DFS/543.diameter-of-binary-tree.go) |  | [✓](DFS/543.diameter-of-binary-tree.ts) |
 | 572.subtree-of-another-tree | [✓](DFS/572.subtree-of-another-tree.go) | [✓](DFS/572.subtree-of-another-tree.py) | [✓](DFS/572.subtree-of-another-tree.ts) |
 | 701.insert-into-a-binary-search-tree | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
+| 88.merge-sorted-array | [✓](DFS/88.merge-sorted-array.go) |  |  |
 | 971.flip-binary-tree-to-match-preorder-traversal |  |  | [✓](DFS/971.flip-binary-tree-to-match-preorder-traversal.ts) |
 | 98.validate-binary-search-tree | [✓](DFS/98.validate-binary-search-tree.go) | [✓](DFS/98.validate-binary-search-tree.py) |  |
+
+## DataStructure
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 146.lru-cache | [✓](DataStructure/146.lru-cache.go) |  |  |
+| 1570.dot-product-of-two-sparse-vectors | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.go) |  | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.ts) |
+| 707.design-linked-list | [✓](DataStructure/707.design-linked-list.go) |  |  |
 
 ## Dynamic_programming
 
@@ -42,16 +58,25 @@
 |-----------|----|---------|-----------|
 | 494.target-sum | [✓](Dynamic_programming/494.target-sum.go) | [✓](Dynamic_programming/494.target-sum.py) | [✓](Dynamic_programming/494.target-sum.ts) |
 
-## Others
+## Heap
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 146.lru-cache | [✓](Others/146.lru-cache.go) |  |  |
+| 215.kth-largest-element-in-an-array | [✓](Heap/215.kth-largest-element-in-an-array.go) |  | [✓](Heap/215.kth-largest-element-in-an-array.ts) |
+
+## Stack
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) |  |  |
+| 71.simplify-path | [✓](Stack/71.simplify-path.go) |  |  |
 
 ## Two_points
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 1.two-sum | [✓](Two_points/1.two-sum.go) | [✓](Two_points/1.two-sum.py) | [✓](Two_points/1.two-sum.ts) |
+| 670.maximum-swap | [✓](Two_points/670.maximum-swap.go) |  |  |
+| 680.valid-palindrome-ii | [✓](Two_points/680.valid-palindrome-ii.go) |  |  |
 | 7.reverse-integer | [✓](Two_points/7.reverse-integer.go) |  |  |
 
