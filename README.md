@@ -5,6 +5,8 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 1091.shortest-path-in-binary-matrix | [✓](BFS/1091.shortest-path-in-binary-matrix.go) |  |  |
+| 314.binary-tree-vertical-order-traversal | [✓](BFS/314.binary-tree-vertical-order-traversal.go) |  |  |
+| 314.binary-tree-vertical-order-traversal_v1 | [✓](BFS/314.binary-tree-vertical-order-traversal_v1.go) |  |  |
 | 5.longest-palindromic-substring | [✓](BFS/5.longest-palindromic-substring.go) | [✓](BFS/5.longest-palindromic-substring.py) |  |
 
 ## Backtracking
@@ -34,6 +36,7 @@
 | 106.construct-binary-tree-from-inorder-and-postorder-traversal | [✓](DFS/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
 | 110.balanced-binary-tree | [✓](DFS/110.balanced-binary-tree.go) | [✓](DFS/110.balanced-binary-tree.py) | [✓](DFS/110.balanced-binary-tree.ts) |
 | 1448.count-good-nodes-in-binary-tree | [✓](DFS/1448.count-good-nodes-in-binary-tree.go) | [✓](DFS/1448.count-good-nodes-in-binary-tree.py) | [✓](DFS/1448.count-good-nodes-in-binary-tree.ts) |
+| 1650.lowest-common-ancestor-of-a-binary-tree-iii | [✓](DFS/1650.lowest-common-ancestor-of-a-binary-tree-iii.go) |  |  |
 | 206.reverse-linked-list |  |  | [✓](DFS/206.reverse-linked-list.ts) |
 | 235.lowest-common-ancestor-of-a-binary-search-tree | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
 | 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.ts) |
@@ -63,6 +66,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 215.kth-largest-element-in-an-array | [✓](Heap/215.kth-largest-element-in-an-array.go) |  | [✓](Heap/215.kth-largest-element-in-an-array.ts) |
+| 973.k-closest-points-to-origin | [✓](Heap/973.k-closest-points-to-origin.go) |  |  |
 
 ## Stack
 
@@ -76,6 +80,9 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 1.two-sum | [✓](Two_points/1.two-sum.go) | [✓](Two_points/1.two-sum.py) | [✓](Two_points/1.two-sum.ts) |
+| 1249.minimum-remove-to-make-valid-parentheses | [✓](Two_points/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
+| 408.valid-word-abbreviation | [✓](Two_points/408.valid-word-abbreviation.go) |  |  |
+| 56.merge-intervals | [✓](Two_points/56.merge-intervals.go) |  |  |
 | 670.maximum-swap | [✓](Two_points/670.maximum-swap.go) |  |  |
 | 680.valid-palindrome-ii | [✓](Two_points/680.valid-palindrome-ii.go) |  |  |
 | 7.reverse-integer | [✓](Two_points/7.reverse-integer.go) |  |  |
