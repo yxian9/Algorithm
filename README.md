@@ -5,6 +5,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 1091.shortest-path-in-binary-matrix | [✓](BFS/1091.shortest-path-in-binary-matrix.go) |  |  |
+| 199.binary-tree-right-side-view | [✓](BFS/199.binary-tree-right-side-view.go) |  |  |
 | 314.binary-tree-vertical-order-traversal | [✓](BFS/314.binary-tree-vertical-order-traversal.go) |  |  |
 | 314.binary-tree-vertical-order-traversal_v1 | [✓](BFS/314.binary-tree-vertical-order-traversal_v1.go) |  |  |
 | 5.longest-palindromic-substring | [✓](BFS/5.longest-palindromic-substring.go) | [✓](BFS/5.longest-palindromic-substring.py) |  |
@@ -26,6 +27,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 162.find-peak-element | [✓](BinarySearch/162.find-peak-element.go) |  |  |
+| 34.find-first-and-last-position-of-element-in-sorted-array | [✓](BinarySearch/34.find-first-and-last-position-of-element-in-sorted-array.go) |  |  |
 
 ## DFS
 
@@ -55,17 +57,24 @@
 | 1570.dot-product-of-two-sparse-vectors | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.go) |  | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.ts) |
 | 707.design-linked-list | [✓](DataStructure/707.design-linked-list.go) |  |  |
 
-## Dynamic_programming
+## DynamicProgramming
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 494.target-sum | [✓](Dynamic_programming/494.target-sum.go) | [✓](Dynamic_programming/494.target-sum.py) | [✓](Dynamic_programming/494.target-sum.ts) |
+| 494.target-sum | [✓](DynamicProgramming/494.target-sum.go) | [✓](DynamicProgramming/494.target-sum.py) | [✓](DynamicProgramming/494.target-sum.ts) |
+
+## Graph
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 498.diagonal-traverse | [✓](Graph/498.diagonal-traverse.go) |  |  |
 
 ## Heap
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 215.kth-largest-element-in-an-array | [✓](Heap/215.kth-largest-element-in-an-array.go) |  | [✓](Heap/215.kth-largest-element-in-an-array.ts) |
+| 347.top-k-frequent-elements | [✓](Heap/347.top-k-frequent-elements.go) |  |  |
 | 973.k-closest-points-to-origin | [✓](Heap/973.k-closest-points-to-origin.go) |  |  |
 
 ## Stack
@@ -81,6 +90,7 @@
 |-----------|----|---------|-----------|
 | 1.two-sum | [✓](Two_points/1.two-sum.go) | [✓](Two_points/1.two-sum.py) | [✓](Two_points/1.two-sum.ts) |
 | 1249.minimum-remove-to-make-valid-parentheses | [✓](Two_points/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
+| 227.basic-calculator-ii | [✓](Two_points/227.basic-calculator-ii.go) |  |  |
 | 408.valid-word-abbreviation | [✓](Two_points/408.valid-word-abbreviation.go) |  |  |
 | 56.merge-intervals | [✓](Two_points/56.merge-intervals.go) |  |  |
 | 670.maximum-swap | [✓](Two_points/670.maximum-swap.go) |  |  |

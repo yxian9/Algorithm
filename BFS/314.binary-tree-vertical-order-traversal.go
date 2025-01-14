@@ -61,3 +61,38 @@ func verticalOrder(root *TreeNode) [][]int {
 
 // @leet end
 
+type item314 struct {
+	col       int
+	*TreeNode // embed TreeNode pointer type
+}
+
+func verticalOrder(root *TreeNode) [][]int {
+	if root == nil {
+		return [][]int{}
+	}
+	order := map[int][]int{}
+	var minC, maxC int
+	queue := []item314{{0, root}}
+
+	for len(queue) > 0 {
+		l := queue[0]
+		queue = queue[1:]
+		col := l.col
+		order[col] = append(order[col], l.Val)
+		if l.Left != nil {
+			queue = append(queue, item314{col - 1, l.Left})
+			minC = min(minC, col-1)
+		}
+		if l.Right != nil {
+			queue = append(queue, item314{col + 1, l.Right})
+			maxC = max(maxC, col+1)
+		}
+	}
+	var res [][]int
+	i := minC
+	for i <= maxC {
+		res = append(res, order[i])
+		i++
+	}
+	return res
+}
