@@ -6,9 +6,11 @@
 |-----------|----|---------|-----------|
 | 1091.shortest-path-in-binary-matrix | [✓](BFS/1091.shortest-path-in-binary-matrix.go) |  |  |
 | 199.binary-tree-right-side-view | [✓](BFS/199.binary-tree-right-side-view.go) |  |  |
+| 207.course-schedule | [✓](BFS/207.course-schedule.go) |  |  |
 | 314.binary-tree-vertical-order-traversal | [✓](BFS/314.binary-tree-vertical-order-traversal.go) |  |  |
 | 314.binary-tree-vertical-order-traversal_v1 | [✓](BFS/314.binary-tree-vertical-order-traversal_v1.go) |  |  |
 | 5.longest-palindromic-substring | [✓](BFS/5.longest-palindromic-substring.go) | [✓](BFS/5.longest-palindromic-substring.py) |  |
+| 987.vertical-order-traversal-of-a-binary-tree | [✓](BFS/987.vertical-order-traversal-of-a-binary-tree.go) |  |  |
 
 ## Backtracking
 
@@ -40,8 +42,10 @@
 | 1448.count-good-nodes-in-binary-tree | [✓](DFS/1448.count-good-nodes-in-binary-tree.go) | [✓](DFS/1448.count-good-nodes-in-binary-tree.py) | [✓](DFS/1448.count-good-nodes-in-binary-tree.ts) |
 | 1650.lowest-common-ancestor-of-a-binary-tree-iii | [✓](DFS/1650.lowest-common-ancestor-of-a-binary-tree-iii.go) |  |  |
 | 206.reverse-linked-list |  |  | [✓](DFS/206.reverse-linked-list.ts) |
+| 23.merge-k-sorted-lists | [✓](DFS/23.merge-k-sorted-lists.go) |  |  |
 | 235.lowest-common-ancestor-of-a-binary-search-tree | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
 | 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.ts) |
+| 339.nested-list-weight-sum | [✓](DFS/339.nested-list-weight-sum.go) |  |  |
 | 543.diameter-of-binary-tree | [✓](DFS/543.diameter-of-binary-tree.go) |  | [✓](DFS/543.diameter-of-binary-tree.ts) |
 | 572.subtree-of-another-tree | [✓](DFS/572.subtree-of-another-tree.go) | [✓](DFS/572.subtree-of-another-tree.py) | [✓](DFS/572.subtree-of-another-tree.ts) |
 | 701.insert-into-a-binary-search-tree | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
@@ -68,6 +72,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 498.diagonal-traverse | [✓](Graph/498.diagonal-traverse.go) |  |  |
+| 827.making-a-large-island | [✓](Graph/827.making-a-large-island.go) |  |  |
 
 ## Heap
 
@@ -84,16 +89,30 @@
 | 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) |  |  |
 | 71.simplify-path | [✓](Stack/71.simplify-path.go) |  |  |
 
-## Two_points
+## TwoPoints
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 1.two-sum | [✓](Two_points/1.two-sum.go) | [✓](Two_points/1.two-sum.py) | [✓](Two_points/1.two-sum.ts) |
-| 1249.minimum-remove-to-make-valid-parentheses | [✓](Two_points/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
-| 227.basic-calculator-ii | [✓](Two_points/227.basic-calculator-ii.go) |  |  |
-| 408.valid-word-abbreviation | [✓](Two_points/408.valid-word-abbreviation.go) |  |  |
-| 56.merge-intervals | [✓](Two_points/56.merge-intervals.go) |  |  |
-| 670.maximum-swap | [✓](Two_points/670.maximum-swap.go) |  |  |
-| 680.valid-palindrome-ii | [✓](Two_points/680.valid-palindrome-ii.go) |  |  |
-| 7.reverse-integer | [✓](Two_points/7.reverse-integer.go) |  |  |
+| 1.two-sum | [✓](TwoPoints/1.two-sum.go) | [✓](TwoPoints/1.two-sum.py) | [✓](TwoPoints/1.two-sum.ts) |
+| 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPoints/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
+| 138.copy-list-with-random-pointer | [✓](TwoPoints/138.copy-list-with-random-pointer.go) |  |  |
+| 1539.kth-missing-positive-number | [✓](TwoPoints/1539.kth-missing-positive-number.go) |  |  |
+| 227.basic-calculator-ii | [✓](TwoPoints/227.basic-calculator-ii.go) |  |  |
+| 249.group-shifted-strings | [✓](TwoPoints/249.group-shifted-strings.go) |  |  |
+| 31.next-permutation | [✓](TwoPoints/31.next-permutation.go) |  |  |
+| 346.moving-average-from-data-stream | [✓](TwoPoints/346.moving-average-from-data-stream.go) |  |  |
+| 398.random-pick-index | [✓](TwoPoints/398.random-pick-index.go) |  |  |
+| 408.valid-word-abbreviation | [✓](TwoPoints/408.valid-word-abbreviation.go) |  |  |
+| 528.random-pick-with-weight | [✓](TwoPoints/528.random-pick-with-weight.go) |  |  |
+| 56.merge-intervals | [✓](TwoPoints/56.merge-intervals.go) |  |  |
+| 670.maximum-swap | [✓](TwoPoints/670.maximum-swap.go) |  |  |
+| 680.valid-palindrome-ii | [✓](TwoPoints/680.valid-palindrome-ii.go) |  |  |
+| 7.reverse-integer | [✓](TwoPoints/7.reverse-integer.go) |  |  |
+| 766.toeplitz-matrix | [✓](TwoPoints/766.toeplitz-matrix.go) |  |  |
+
+## UnionFind
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 721.accounts-merge | [✓](UnionFind/721.accounts-merge.go) |  |  |
 
