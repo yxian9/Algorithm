@@ -90,30 +90,32 @@
 | 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) |  |  |
 | 71.simplify-path | [✓](Stack/71.simplify-path.go) |  |  |
 
-## TwoPoints
+## TwoPointer
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 1.two-sum | [✓](TwoPoints/1.two-sum.go) | [✓](TwoPoints/1.two-sum.py) | [✓](TwoPoints/1.two-sum.ts) |
-| 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPoints/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
-| 138.copy-list-with-random-pointer | [✓](TwoPoints/138.copy-list-with-random-pointer.go) |  |  |
-| 14.longest-common-prefix | [✓](TwoPoints/14.longest-common-prefix.go) |  |  |
-| 1539.kth-missing-positive-number | [✓](TwoPoints/1539.kth-missing-positive-number.go) |  |  |
-| 163.missing-ranges | [✓](TwoPoints/163.missing-ranges.go) |  |  |
-| 227.basic-calculator-ii | [✓](TwoPoints/227.basic-calculator-ii.go) |  |  |
-| 249.group-shifted-strings | [✓](TwoPoints/249.group-shifted-strings.go) |  |  |
-| 270.closest-binary-search-tree-value | [✓](TwoPoints/270.closest-binary-search-tree-value.go) |  |  |
-| 31.next-permutation | [✓](TwoPoints/31.next-permutation.go) |  |  |
-| 346.moving-average-from-data-stream | [✓](TwoPoints/346.moving-average-from-data-stream.go) |  |  |
-| 398.random-pick-index | [✓](TwoPoints/398.random-pick-index.go) |  |  |
-| 408.valid-word-abbreviation | [✓](TwoPoints/408.valid-word-abbreviation.go) |  |  |
-| 528.random-pick-with-weight | [✓](TwoPoints/528.random-pick-with-weight.go) |  |  |
-| 56.merge-intervals | [✓](TwoPoints/56.merge-intervals.go) |  |  |
-| 670.maximum-swap | [✓](TwoPoints/670.maximum-swap.go) |  |  |
-| 680.valid-palindrome-ii | [✓](TwoPoints/680.valid-palindrome-ii.go) |  |  |
-| 7.reverse-integer | [✓](TwoPoints/7.reverse-integer.go) |  |  |
-| 766.toeplitz-matrix | [✓](TwoPoints/766.toeplitz-matrix.go) |  |  |
-| 986.interval-list-intersections | [✓](TwoPoints/986.interval-list-intersections.go) |  |  |
+| 1.two-sum | [✓](TwoPointer/1.two-sum.go) | [✓](TwoPointer/1.two-sum.py) | [✓](TwoPointer/1.two-sum.ts) |
+| 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPointer/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
+| 138.copy-list-with-random-pointer | [✓](TwoPointer/138.copy-list-with-random-pointer.go) |  |  |
+| 14.longest-common-prefix | [✓](TwoPointer/14.longest-common-prefix.go) |  |  |
+| 1539.kth-missing-positive-number | [✓](TwoPointer/1539.kth-missing-positive-number.go) |  |  |
+| 163.missing-ranges | [✓](TwoPointer/163.missing-ranges.go) |  |  |
+| 227.basic-calculator-ii | [✓](TwoPointer/227.basic-calculator-ii.go) |  |  |
+| 249.group-shifted-strings | [✓](TwoPointer/249.group-shifted-strings.go) |  |  |
+| 270.closest-binary-search-tree-value | [✓](TwoPointer/270.closest-binary-search-tree-value.go) |  |  |
+| 31.next-permutation | [✓](TwoPointer/31.next-permutation.go) |  |  |
+| 346.moving-average-from-data-stream | [✓](TwoPointer/346.moving-average-from-data-stream.go) |  |  |
+| 398.random-pick-index | [✓](TwoPointer/398.random-pick-index.go) |  |  |
+| 408.valid-word-abbreviation | [✓](TwoPointer/408.valid-word-abbreviation.go) |  |  |
+| 415.add-strings | [✓](TwoPointer/415.add-strings.go) |  |  |
+| 528.random-pick-with-weight | [✓](TwoPointer/528.random-pick-with-weight.go) |  |  |
+| 56.merge-intervals | [✓](TwoPointer/56.merge-intervals.go) |  |  |
+| 670.maximum-swap | [✓](TwoPointer/670.maximum-swap.go) |  |  |
+| 680.valid-palindrome-ii | [✓](TwoPointer/680.valid-palindrome-ii.go) |  |  |
+| 7.reverse-integer | [✓](TwoPointer/7.reverse-integer.go) |  |  |
+| 76.minimum-window-substring | [✓](TwoPointer/76.minimum-window-substring.go) |  |  |
+| 766.toeplitz-matrix | [✓](TwoPointer/766.toeplitz-matrix.go) |  |  |
+| 986.interval-list-intersections | [✓](TwoPointer/986.interval-list-intersections.go) |  |  |
 
 ## UnionFind
 

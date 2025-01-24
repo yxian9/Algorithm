@@ -2,8 +2,74 @@ package leetcode
 
 import "unicode"
 
-// iwth stack
+// with stack
 func calculate3(s string) int {
+	var num int
+	prevOp := '+'
+	s += "+"
+	res := []int{}
+	for _, r := range s {
+		if r == ' ' {
+			continue
+		}
+		if unicode.IsDigit(r) {
+			num = num*10 + int(r-'0')
+		} else {
+			// found ops, process num, with prev
+			// if preOps == +, can push to stack, add
+			switch prevOp {
+			case '+':
+				res = append(res, num)
+			case '-':
+				res = append(res, -num)
+			case '*':
+				res[len(res)-1] = res[len(res)-1] * num
+			case '/':
+				res[len(res)-1] = res[len(res)-1] / num
+			}
+
+			num, prevOp = 0, r
+		}
+	}
+	ret := 0
+	for _, v := range res {
+		ret += v
+	}
+	return ret
+}
+
+// lh, rh version
+func calculate4(s string) int {
+	var (
+		ret, lh, rh int
+		prevOp      = '+'
+	)
+	for _, r := range s + "+" { // + just finish last lh rh operator. still need add
+		if r == ' ' {
+			continue
+		}
+		if unicode.IsNumber(r) {
+			rh = rh*10 + int(r-'0')
+			continue
+		}
+		// fond ops
+		switch prevOp {
+		case '+':
+			ret, lh = ret+lh, rh
+		case '-':
+			ret, lh = ret+lh, -rh
+		case '*':
+			lh *= rh
+		case '/':
+			lh /= rh
+		}
+		// reset
+		rh, prevOp = 0, r
+	}
+	return ret + lh
+}
+
+func calculate_array_version(s string) int {
 	var num int
 	prevOp := '+'
 	s += "+"
@@ -84,6 +150,7 @@ func getNum(s string, idx int) (num, step int) {
 	return num, step
 }
 
+// first verbose version
 func calculate(s string) int {
 	var nums []int
 	idx := 0
