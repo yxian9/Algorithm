@@ -10,6 +10,8 @@
 | 314.binary-tree-vertical-order-traversal | [✓](BFS/314.binary-tree-vertical-order-traversal.go) |  |  |
 | 314.binary-tree-vertical-order-traversal_v1 | [✓](BFS/314.binary-tree-vertical-order-traversal_v1.go) |  |  |
 | 5.longest-palindromic-substring | [✓](BFS/5.longest-palindromic-substring.go) | [✓](BFS/5.longest-palindromic-substring.py) |  |
+| 863.all-nodes-distance-k-in-binary-tree | [✓](BFS/863.all-nodes-distance-k-in-binary-tree.go) |  |  |
+| 958.check-completeness-of-a-binary-tree | [✓](BFS/958.check-completeness-of-a-binary-tree.go) |  |  |
 | 987.vertical-order-traversal-of-a-binary-tree | [✓](BFS/987.vertical-order-traversal-of-a-binary-tree.go) |  |  |
 
 ## Backtracking
@@ -39,12 +41,15 @@
 | 105.construct-binary-tree-from-preorder-and-inorder-traversal | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
 | 106.construct-binary-tree-from-inorder-and-postorder-traversal | [✓](DFS/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
 | 110.balanced-binary-tree | [✓](DFS/110.balanced-binary-tree.go) | [✓](DFS/110.balanced-binary-tree.py) | [✓](DFS/110.balanced-binary-tree.ts) |
+| 129.sum-root-to-leaf-numbers | [✓](DFS/129.sum-root-to-leaf-numbers.go) |  |  |
 | 1448.count-good-nodes-in-binary-tree | [✓](DFS/1448.count-good-nodes-in-binary-tree.go) | [✓](DFS/1448.count-good-nodes-in-binary-tree.py) | [✓](DFS/1448.count-good-nodes-in-binary-tree.ts) |
 | 1650.lowest-common-ancestor-of-a-binary-tree-iii | [✓](DFS/1650.lowest-common-ancestor-of-a-binary-tree-iii.go) |  |  |
 | 206.reverse-linked-list |  |  | [✓](DFS/206.reverse-linked-list.ts) |
 | 23.merge-k-sorted-lists | [✓](DFS/23.merge-k-sorted-lists.go) |  |  |
 | 235.lowest-common-ancestor-of-a-binary-search-tree | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
 | 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.ts) |
+| 282.expression-add-operators | [✓](DFS/282.expression-add-operators.go) |  |  |
+| 329.longest-increasing-path-in-a-matrix | [✓](DFS/329.longest-increasing-path-in-a-matrix.go) |  |  |
 | 339.nested-list-weight-sum | [✓](DFS/339.nested-list-weight-sum.go) |  |  |
 | 426.convert-binary-search-tree-to-sorted-doubly-linked-list | [✓](DFS/426.convert-binary-search-tree-to-sorted-doubly-linked-list.go) |  |  |
 | 543.diameter-of-binary-tree | [✓](DFS/543.diameter-of-binary-tree.go) |  | [✓](DFS/543.diameter-of-binary-tree.ts) |
@@ -72,6 +77,7 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| 48.rotate-image | [✓](Graph/48.rotate-image.go) |  |  |
 | 498.diagonal-traverse | [✓](Graph/498.diagonal-traverse.go) |  |  |
 | 827.making-a-large-island | [✓](Graph/827.making-a-large-island.go) |  |  |
 
@@ -95,11 +101,14 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 1.two-sum | [✓](TwoPointer/1.two-sum.go) | [✓](TwoPointer/1.two-sum.py) | [✓](TwoPointer/1.two-sum.ts) |
+| 1004.max-consecutive-ones-iii | [✓](TwoPointer/1004.max-consecutive-ones-iii.go) |  |  |
+| 121.best-time-to-buy-and-sell-stock | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.go) |  |  |
 | 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPointer/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
 | 138.copy-list-with-random-pointer | [✓](TwoPointer/138.copy-list-with-random-pointer.go) |  |  |
 | 14.longest-common-prefix | [✓](TwoPointer/14.longest-common-prefix.go) |  |  |
 | 1539.kth-missing-positive-number | [✓](TwoPointer/1539.kth-missing-positive-number.go) |  |  |
 | 163.missing-ranges | [✓](TwoPointer/163.missing-ranges.go) |  |  |
+| 19.remove-nth-node-from-end-of-list | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.go) |  |  |
 | 227.basic-calculator-ii | [✓](TwoPointer/227.basic-calculator-ii.go) |  |  |
 | 249.group-shifted-strings | [✓](TwoPointer/249.group-shifted-strings.go) |  |  |
 | 270.closest-binary-search-tree-value | [✓](TwoPointer/270.closest-binary-search-tree-value.go) |  |  |

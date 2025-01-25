@@ -2,6 +2,39 @@ package leetcode
 
 import "unicode"
 
+func calculate_remove_previous(s string) int {
+	var (
+		ret, prev, num int // the prev is just a place holder for next ops. no need to add in the final return
+		// do need append a + though
+		prevOp = '+'
+	)
+	for _, r := range s + "+" { // use prev, still need additional ops to push last item
+		if r == ' ' {
+			continue
+		}
+		if unicode.IsNumber(r) {
+			num = num*10 + int(r-'0')
+			continue
+		}
+		// fond ops
+		switch prevOp {
+		case '+':
+			ret, prev = ret+num, num
+		case '-':
+			ret, prev = ret-num, -num
+		case '*':
+			ret = ret - prev + prev*num
+			prev = prev * num
+		case '/':
+			ret = ret - prev + prev/num
+			prev = prev / num
+		}
+		// reset
+		num, prevOp = 0, r
+	}
+	return ret
+}
+
 // with stack
 func calculate3(s string) int {
 	var num int
@@ -38,6 +71,7 @@ func calculate3(s string) int {
 	return ret
 }
 
+// lh, rh version
 // lh, rh version
 func calculate4(s string) int {
 	var (

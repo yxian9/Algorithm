@@ -6,11 +6,12 @@ type TreeNode struct {
 	Right *TreeNode
 }
 type Node struct {
-	Val    int
-	Next   *Node
-	Left   *Node
-	Right  *Node
-	Parent *Node
+	Val       int
+	Next      *Node
+	Left      *Node
+	Right     *Node
+	Parent    *Node
+	Neighbors []*Node
 }
 type ListNode struct {
 	Val  int

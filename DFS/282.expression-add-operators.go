@@ -6,6 +6,45 @@ import (
 )
 
 // @leet start
+func getNum(s string) (num int) {
+	for _, r := range s {
+		num = num*10 + int(r) - '0'
+	}
+	return num
+}
+
+func addOperators(num string, target int) []string {
+	n := len(num)
+	res := []string{}
+
+	var dfsAdd func(idx, prev, cur int, buildS string)
+
+	dfsAdd = func(idx, prev, cur int, buildS string) {
+		if idx == n {
+			if cur == target {
+				res = append(res, buildS)
+			}
+		}
+		for i := idx; i < n; i++ {
+			nStr := num[idx : i+1]
+			nNum := getNum(nStr)
+			if num[idx] == '0' && i != idx { // idx not i
+				break
+			}
+			if idx == 0 { // first index // no i
+				dfsAdd(i+1, nNum, nNum, nStr)
+			} else {
+				dfsAdd(i+1, nNum, cur+nNum, buildS+"+"+nStr)
+				dfsAdd(i+1, -nNum, cur-nNum, buildS+"-"+nStr)
+				dfsAdd(i+1, prev*nNum, cur-prev+prev*nNum, buildS+"*"+nStr)
+			}
+		}
+	}
+	dfsAdd(0, 0, 0, "")
+	return res
+}
+
+// @leet end
 
 func process(op rune, lh int, b byte, pre int) (int, int) {
 	rh := int(b) - '0'
@@ -21,7 +60,7 @@ func process(op rune, lh int, b byte, pre int) (int, int) {
 	}
 }
 
-func addOperators(num string, target int) []string {
+func addOperators_previous_not_work(num string, target int) []string {
 	var (
 		n    = len(num)
 		res  [][]rune
@@ -56,6 +95,3 @@ func addOperators(num string, target int) []string {
 	}
 	return ret
 }
-
-// @leet end
-

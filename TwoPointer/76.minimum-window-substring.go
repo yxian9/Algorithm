@@ -120,3 +120,53 @@ func minWindow2(s string, t string) string {
 	}
 	return s[bestL : bestR+1]
 }
+
+// use array
+func minWindow(s string, t string) string {
+	freq := [128]int{}    // can directly use array as char freq
+	for _, r := range t { // up vote
+		freq[r]++
+	}
+	var bestL, bestR, l, r int
+	minLen, count := math.MaxInt, len(t)
+	for ; r < len(s); r++ {
+		curR := s[r]
+		// move r until all covered
+		freq[curR]--
+		if freq[curR] >= 0 {
+			count--
+		}
+		// if count > 0 {
+		// 	continue
+		// } // logic can move to next
+
+		// if !allCovered(freq) {
+		// 	continue
+		// }
+
+		// allCovered, try to shirk l side
+		// for {
+		for count == 0 {
+			curLen := r - l + 1
+			if curLen < minLen { // need <=
+				minLen = curLen
+				bestL, bestR = l, r
+			}
+			lrune := s[l]
+			// if freq[lrune]+1 > 0 {
+			//     count++
+			// 	// break
+			// }
+			freq[lrune]++
+			l++
+			if freq[lrune] > 0 {
+				count++
+			}
+		}
+
+	}
+	if minLen == math.MaxInt {
+		return ""
+	}
+	return s[bestL : bestR+1]
+}
