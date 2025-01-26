@@ -67,4 +67,65 @@ func distanceK(root *TreeNode, target *TreeNode, K int) []int {
 }
 
 // @leet end
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func distanceK_simpleVersion(root *TreeNode, target *TreeNode, k int) []int {
+	var (
+		childToParen = map[*TreeNode]*TreeNode{}
+		res          = []int{}
+		queue        = []*TreeNode{target}
+		seen         = map[*TreeNode]bool{}
+		dist         int
+	)
+	// build childParen relation
+	var dfs func(child, paren *TreeNode)
+	dfs = func(child, paren *TreeNode) {
+		if child == nil {
+			return
+		}
+		childToParen[child] = paren
+		dfs(child.Left, child)
+		dfs(child.Right, child)
+	}
+	dfs(root, nil)
+	// bfs
+	for len(queue) > 0 {
+		if dist == k {
+			for _, v := range queue {
+				if seen[v] || v == nil {
+					continue
+				}
+				res = append(res, v.Val)
+			}
+			break
+		}
+		dist++
+		for range len(queue) {
+			lh := queue[0]
+			queue = queue[1:]
+			if seen[lh] || lh == nil { // way clean. need pay attention here
+				continue // especially compare with 958. the coninue does not work
+			}
+			seen[lh] = true
+			queue = append(queue, lh.Left)
+			queue = append(queue, lh.Right)
+			queue = append(queue, childToParen[lh])
+		}
 
+	}
+	return res
+}
