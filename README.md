@@ -56,7 +56,7 @@
 | 329.longest-increasing-path-in-a-matrix | [✓](DFS/329.longest-increasing-path-in-a-matrix.go) |  |  |
 | 339.nested-list-weight-sum | [✓](DFS/339.nested-list-weight-sum.go) |  |  |
 | 426.convert-binary-search-tree-to-sorted-doubly-linked-list | [✓](DFS/426.convert-binary-search-tree-to-sorted-doubly-linked-list.go) |  |  |
-| 543.diameter-of-binary-tree | [✓](DFS/543.diameter-of-binary-tree.go) |  | [✓](DFS/543.diameter-of-binary-tree.ts) |
+| 543.diameter-of-binary-tree | [✓](DFS/543.diameter-of-binary-tree.go) | [✓](DFS/543.diameter-of-binary-tree.py) | [✓](DFS/543.diameter-of-binary-tree.ts) |
 | 572.subtree-of-another-tree | [✓](DFS/572.subtree-of-another-tree.go) | [✓](DFS/572.subtree-of-another-tree.py) | [✓](DFS/572.subtree-of-another-tree.ts) |
 | 695.max-area-of-island | [✓](DFS/695.max-area-of-island.go) |  |  |
 | 701.insert-into-a-binary-search-tree | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
@@ -99,7 +99,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 20.valid-parentheses | [✓](Stack/20.valid-parentheses.go) |  |  |
-| 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) |  |  |
+| 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) | [✓](Stack/239.sliding-window-maximum.py) |  |
 | 71.simplify-path | [✓](Stack/71.simplify-path.go) |  |  |
 
 ## TwoPointer
@@ -110,8 +110,10 @@
 | 1004.max-consecutive-ones-iii | [✓](TwoPointer/1004.max-consecutive-ones-iii.go) |  |  |
 | 121.best-time-to-buy-and-sell-stock | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.go) |  |  |
 | 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPointer/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
+| 125.valid-palindrome | [✓](TwoPointer/125.valid-palindrome.go) | [✓](TwoPointer/125.valid-palindrome.py) |  |
 | 138.copy-list-with-random-pointer | [✓](TwoPointer/138.copy-list-with-random-pointer.go) |  |  |
 | 14.longest-common-prefix | [✓](TwoPointer/14.longest-common-prefix.go) |  |  |
+| 15.3sum | [✓](TwoPointer/15.3sum.go) | [✓](TwoPointer/15.3sum.py) |  |
 | 1539.kth-missing-positive-number | [✓](TwoPointer/1539.kth-missing-positive-number.go) |  |  |
 | 163.missing-ranges | [✓](TwoPointer/163.missing-ranges.go) |  |  |
 | 19.remove-nth-node-from-end-of-list | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.go) |  |  |
@@ -128,11 +130,14 @@
 | 528.random-pick-with-weight | [✓](TwoPointer/528.random-pick-with-weight.go) |  |  |
 | 53.maximum-subarray | [✓](TwoPointer/53.maximum-subarray.go) |  |  |
 | 56.merge-intervals | [✓](TwoPointer/56.merge-intervals.go) |  |  |
-| 670.maximum-swap | [✓](TwoPointer/670.maximum-swap.go) |  |  |
+| 643.maximum-average-subarray-i | [✓](TwoPointer/643.maximum-average-subarray-i.go) | [✓](TwoPointer/643.maximum-average-subarray-i.py) |  |
+| 670.maximum-swap | [✓](TwoPointer/670.maximum-swap.go) | [✓](TwoPointer/670.maximum-swap.py) |  |
 | 680.valid-palindrome-ii | [✓](TwoPointer/680.valid-palindrome-ii.go) |  |  |
 | 7.reverse-integer | [✓](TwoPointer/7.reverse-integer.go) |  |  |
+| 71.simplify-path |  | [✓](TwoPointer/71.simplify-path.py) |  |
 | 76.minimum-window-substring | [✓](TwoPointer/76.minimum-window-substring.go) |  |  |
 | 766.toeplitz-matrix | [✓](TwoPointer/766.toeplitz-matrix.go) |  |  |
+| 88.merge-sorted-array |  | [✓](TwoPointer/88.merge-sorted-array.py) |  |
 | 9.palindrome-number | [✓](TwoPointer/9.palindrome-number.go) |  |  |
 | 986.interval-list-intersections | [✓](TwoPointer/986.interval-list-intersections.go) |  |  |
 
