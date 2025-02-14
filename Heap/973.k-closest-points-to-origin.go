@@ -35,3 +35,30 @@ func kClosest(points [][]int, k int) [][]int {
 
 // @leet end
 
+func kClosest(points [][]int, k int) [][]int {
+	var h maxHeap
+	heap.Init(&h)
+	for _, point := range points {
+		if len(h) < k { // checked before push
+			heap.Push(&h, point)
+			continue
+		}
+		heap.Push(&h, point)
+		heap.Pop(&h)
+
+	}
+	return h
+}
+//NOTE
+func kClosest(points [][]int, k int) [][]int {
+	var h maxHeap
+	heap.Init(&h)
+	for _, point := range points {
+		heap.Push(&h, point)
+		if len(h) > k { // checked after push.  clean up
+			heap.Pop(&h)
+		} // no code after this line
+	}
+	return h
+}
+
