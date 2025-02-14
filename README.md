@@ -39,6 +39,7 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| 101.symmetric-tree | [✓](DFS/101.symmetric-tree.go) |  |  |
 | 104.maximum-depth-of-binary-tree | [✓](DFS/104.maximum-depth-of-binary-tree.go) | [✓](DFS/104.maximum-depth-of-binary-tree.py) |  |
 | 105.construct-binary-tree-from-preorder-and-inorder-traversal | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
 | 106.construct-binary-tree-from-inorder-and-postorder-traversal | [✓](DFS/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
@@ -68,7 +69,7 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 146.lru-cache | [✓](DataStructure/146.lru-cache.go) |  |  |
+| 146.lru-cache | [✓](DataStructure/146.lru-cache.go) | [✓](DataStructure/146.lru-cache.py) |  |
 | 1570.dot-product-of-two-sparse-vectors | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.go) |  | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.ts) |
 | 707.design-linked-list | [✓](DataStructure/707.design-linked-list.go) |  |  |
 

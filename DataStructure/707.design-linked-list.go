@@ -1,82 +1,74 @@
 package leetcode
 
-// @leet start
-type node struct {
-	Val       int
-	Pre, Next *node
+type l struct {
+	val        int
+	prev, next *l
 }
 type MyLinkedList struct {
-	length int
-	dummy  *node
+	dummy *l
+	len   int
 }
 
-func Constructor() MyLinkedList {
-	dummy := &node{}
-	dummy.Pre = dummy
-	dummy.Next = dummy
-	return MyLinkedList{
-		dummy:  dummy,
-		length: 0,
-	}
+func Constructor3() MyLinkedList {
+	dummy := &l{}
+	dummy.next, dummy.prev = dummy, dummy
+	return MyLinkedList{dummy, 0}
 }
 
 func (this *MyLinkedList) Get(index int) int {
-	x := this.getNode(index)
-	if x == nil {
-		return -1
+	n := this.getNode(index)
+	if n != nil {
+		return n.val
 	}
-	return x.Val
+	return -1
 }
 
-func (this *MyLinkedList) getNode(index int) *node {
-	if index > this.length-1 {
+func (this *MyLinkedList) getNode(index int) *l {
+	if index >= this.len {
 		return nil
 	}
-	cur := this.dummy.Next
+	cur := this.dummy.next
 	for range index {
-		cur = cur.Next
+		cur = cur.next
 	}
 	return cur
 }
 
+func (this *MyLinkedList) AddBeforeNode(node *l, val int) {
+	x := &l{val: val}
+	x.prev = node.prev
+	x.next = node
+	x.prev.next = x
+	x.next.prev = x
+	this.len++
+}
+
 func (this *MyLinkedList) AddAtHead(val int) {
-	this.inSertBefore(this.dummy.Next, val)
-}
-
-func (this *MyLinkedList) inSertBefore(x *node, Val int) {
-	nn := &node{Val: Val}
-	nn.Pre = x.Pre
-	nn.Next = x
-	nn.Pre.Next = nn
-	nn.Next.Pre = nn
-	this.length++
-}
-
-func (this *MyLinkedList) deleteNode(x *node) {
-	x.Pre.Next = x.Next
-	x.Next.Pre = x.Pre
-	this.length--
+	this.AddBeforeNode(this.dummy.next, val)
 }
 
 func (this *MyLinkedList) AddAtTail(val int) {
-	this.inSertBefore(this.dummy, val)
+	this.AddBeforeNode(this.dummy, val)
 }
 
 func (this *MyLinkedList) AddAtIndex(index int, val int) {
-	if index == this.length {
+	if index == this.len {
 		this.AddAtTail(val)
 		return
 	}
-	curNode := this.getNode(index)
-	if curNode != nil {
-		this.inSertBefore(curNode, val)
+	n := this.getNode(index)
+	if n != nil {
+		this.AddBeforeNode(n, val)
 	}
 }
 
 func (this *MyLinkedList) DeleteAtIndex(index int) {
-	curNode := this.getNode(index)
-	if curNode != nil {
-		this.deleteNode(curNode)
+	x := this.getNode(index)
+	if x != nil {
+		x.prev.next = x.next
+		x.next.prev = x.prev
+		x.next, x.prev = nil, nil
+		this.len--
 	}
 }
 
@@ -89,5 +81,3 @@ func (this *MyLinkedList) DeleteAtIndex(index int) {
  * obj.AddAtIndex(index,val);
  * obj.DeleteAtIndex(index);
  */
-// @leet end
-
