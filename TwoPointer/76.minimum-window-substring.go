@@ -170,3 +170,48 @@ func minWindow(s string, t string) string {
 	}
 	return s[bestL : bestR+1]
 }
+
+// use a acount to check if all covered
+// func allCovered(freq map[rune]int) bool {
+// 	for _, v := range freq {
+// 		if v > 0 {
+// 			return false
+// 		}
+// 	}
+// 	return true
+// }
+
+func minWindow(s string, t string) string {
+	var (
+		freq          [128]int
+		l, bestl      int
+		minLen, count = -1, len(t)
+	)
+	for _, b := range t {
+		freq[b]++
+	}
+	for r, b := range s {
+		freq[b]--
+		if freq[b] >= 0 {
+			count--
+		}
+		for count == 0 { // all freq [t] <= 0
+			curLen := r - l + 1
+			if minLen == -1 || curLen < minLen { // can be <= minLen does not matter
+				minLen, bestl = curLen, l
+			}
+			lb := s[l] // pop left byte
+			freq[lb]++
+			l++
+			if freq[lb] > 0 { // each byte is a single trigger point
+				count++
+			}
+		}
+
+	}
+	if minLen == -1 {
+		return ""
+	}
+
+	return s[bestl : bestl+minLen]
+}

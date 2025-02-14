@@ -63,3 +63,20 @@ func subsets3(nums []int) [][]int {
 	dfs(0)
 	return res
 }
+
+// wireld approach
+func subsets(nums []int) [][]int {
+	var res [][]int
+	var dfs func(idx int, path []int)
+	dfs = func(idx int, path []int) {
+		res = append(res, path)
+		for i := idx; i < len(nums); i++ {
+			temp := []int{}
+			temp = append(temp, path...)
+			temp = append(temp, nums[i])
+			dfs(i+1, temp)
+		}
+	}
+	dfs(0, []int{})
+	return res
+}

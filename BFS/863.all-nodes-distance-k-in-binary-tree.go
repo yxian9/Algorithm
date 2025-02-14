@@ -1,29 +1,55 @@
 package leetcode
 
 // @leet start
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func distanceK(root *TreeNode, target *TreeNode, K int) []int {
+ func distanceK(root *TreeNode, target *TreeNode, k int) []int {
+   var (
+     childToParen = map[*TreeNode]*TreeNode{}
+     res          []int
+     queue        = []*TreeNode{target}
+     seen         = map[*TreeNode]bool{target: true}
+     step         int
+   )
+   var dfs func(child, paren *TreeNode)
+   dfs = func(child, paren *TreeNode) {
+     if child == nil {
+       return
+     }
+     childToParen[child] = paren
+     dfs(child.Left, child)
+     dfs(child.Right, child)
+   }
+   dfs(root, nil)
+   // bfs to get target node
+   for len(queue) > 0 {
+     if step == k {
+       for _, v := range queue {
+         res = append(res, v.Val)
+       }
+       return res
+     }
+     for range len(queue) {
+       lh := queue[0]
+       queue = queue[1:]
+       for _, item := range [3]*TreeNode{lh.Left, lh.Right, childToParen[lh]} {
+         if item != nil && !seen[item] {
+           queue = append(queue, item)
+           seen[item] = true
+         }
+       }
+     }
+     step++
+   }
+
+   return res
+ }
+
+func distanceK2(root *TreeNode, target *TreeNode, K int) []int {
 	childParMap := map[*TreeNode]*TreeNode{}
 
 	// DFS annotates the parent
 	var dfs func(child, par *TreeNode)
 	dfs = func(child, par *TreeNode) {
-		if child == nil {
-			return
-		}
-		childParMap[child] = par
-		dfs(child.Left, child)
-		dfs(child.Right, child)
-	}
 
-	dfs(root, nil)
 
 	q := []*TreeNode{target}
 	seen := map[int]bool{}
