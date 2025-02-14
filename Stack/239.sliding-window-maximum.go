@@ -44,4 +44,19 @@ func maxSlidingWindow(nums []int, k int) []int {
 }
 
 // @leet end
+func maxSlidingWindow(nums []int, k int) []int {
+	s := maxStack{}
+	for i, v := range nums {
+		s.push(v)
+		if i == k-1 {
+			s.update()
+		}
+		if i >= k {
+			s.pop(nums[i-k])
+			s.update()
+		}
+	}
+	return s.res
+}
+
 
