@@ -1,5 +1,18 @@
 package leetcode
 
+func isToeplitzMatrix(matrix [][]int) bool {
+	nr, nc := len(matrix), len(matrix[0])
+	for i := 1; i < nr; i++ {
+		for j := 1; j < nc; j++ {
+			if matrix[i][j] != matrix[i-1][j-1] {
+				return false
+			}
+		}
+	}
+	return true
+}
+
+
 // @leet start
 func isToeplitzMatrix(matrix [][]int) bool {
 	nrow, ncol := len(matrix), len(matrix[0])
