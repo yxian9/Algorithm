@@ -4,7 +4,7 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 1091.shortest-path-in-binary-matrix | [✓](BFS/1091.shortest-path-in-binary-matrix.go) |  |  |
+| 1091.shortest-path-in-binary-matrix | [✓](BFS/1091.shortest-path-in-binary-matrix.go) | [✓](BFS/1091.shortest-path-in-binary-matrix.py) |  |
 | 127.word-ladder | [✓](BFS/127.word-ladder.go) |  |  |
 | 199.binary-tree-right-side-view | [✓](BFS/199.binary-tree-right-side-view.go) |  |  |
 | 207.course-schedule | [✓](BFS/207.course-schedule.go) |  |  |
@@ -12,9 +12,9 @@
 | 314.binary-tree-vertical-order-traversal | [✓](BFS/314.binary-tree-vertical-order-traversal.go) |  |  |
 | 314.binary-tree-vertical-order-traversal_v1 | [✓](BFS/314.binary-tree-vertical-order-traversal_v1.go) |  |  |
 | 5.longest-palindromic-substring | [✓](BFS/5.longest-palindromic-substring.go) | [✓](BFS/5.longest-palindromic-substring.py) |  |
-| 863.all-nodes-distance-k-in-binary-tree | [✓](BFS/863.all-nodes-distance-k-in-binary-tree.go) |  |  |
+| 863.all-nodes-distance-k-in-binary-tree | [✓](BFS/863.all-nodes-distance-k-in-binary-tree.go) | [✓](BFS/863.all-nodes-distance-k-in-binary-tree.py) |  |
 | 958.check-completeness-of-a-binary-tree | [✓](BFS/958.check-completeness-of-a-binary-tree.go) |  |  |
-| 987.vertical-order-traversal-of-a-binary-tree | [✓](BFS/987.vertical-order-traversal-of-a-binary-tree.go) |  |  |
+| 987.vertical-order-traversal-of-a-binary-tree | [✓](BFS/987.vertical-order-traversal-of-a-binary-tree.go) | [✓](BFS/987.vertical-order-traversal-of-a-binary-tree.py) |  |
 
 ## Backtracking
 
@@ -62,6 +62,7 @@
 | 695.max-area-of-island | [✓](DFS/695.max-area-of-island.go) |  |  |
 | 701.insert-into-a-binary-search-tree | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
 | 88.merge-sorted-array | [✓](DFS/88.merge-sorted-array.go) |  |  |
+| 938.range-sum-of-bst | [✓](DFS/938.range-sum-of-bst.go) |  |  |
 | 971.flip-binary-tree-to-match-preorder-traversal |  |  | [✓](DFS/971.flip-binary-tree-to-match-preorder-traversal.ts) |
 | 98.validate-binary-search-tree | [✓](DFS/98.validate-binary-search-tree.go) | [✓](DFS/98.validate-binary-search-tree.py) |  |
 
@@ -95,6 +96,13 @@
 | 347.top-k-frequent-elements | [✓](Heap/347.top-k-frequent-elements.go) |  |  |
 | 973.k-closest-points-to-origin | [✓](Heap/973.k-closest-points-to-origin.go) |  |  |
 
+## PrefixSum
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 523.continuous-subarray-sum | [✓](PrefixSum/523.continuous-subarray-sum.go) | [✓](PrefixSum/523.continuous-subarray-sum.py) |  |
+| 560.subarray-sum-equals-k | [✓](PrefixSum/560.subarray-sum-equals-k.go) |  |  |
+
 ## Stack
 
 |  name | go | py | ts |
@@ -118,7 +126,8 @@
 | 1539.kth-missing-positive-number | [✓](TwoPointer/1539.kth-missing-positive-number.go) |  |  |
 | 163.missing-ranges | [✓](TwoPointer/163.missing-ranges.go) |  |  |
 | 19.remove-nth-node-from-end-of-list | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.go) |  |  |
-| 227.basic-calculator-ii | [✓](TwoPointer/227.basic-calculator-ii.go) |  |  |
+| 20.valid-parentheses |  | [✓](TwoPointer/20.valid-parentheses.py) |  |
+| 227.basic-calculator-ii | [✓](TwoPointer/227.basic-calculator-ii.go) | [✓](TwoPointer/227.basic-calculator-ii.py) |  |
 | 249.group-shifted-strings | [✓](TwoPointer/249.group-shifted-strings.go) |  |  |
 | 26.remove-duplicates-from-sorted-array | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.go) |  |  |
 | 270.closest-binary-search-tree-value | [✓](TwoPointer/270.closest-binary-search-tree-value.go) |  |  |
@@ -130,7 +139,7 @@
 | 415.add-strings | [✓](TwoPointer/415.add-strings.go) |  |  |
 | 528.random-pick-with-weight | [✓](TwoPointer/528.random-pick-with-weight.go) |  |  |
 | 53.maximum-subarray | [✓](TwoPointer/53.maximum-subarray.go) |  |  |
-| 56.merge-intervals | [✓](TwoPointer/56.merge-intervals.go) |  |  |
+| 56.merge-intervals | [✓](TwoPointer/56.merge-intervals.go) | [✓](TwoPointer/56.merge-intervals.py) |  |
 | 643.maximum-average-subarray-i | [✓](TwoPointer/643.maximum-average-subarray-i.go) | [✓](TwoPointer/643.maximum-average-subarray-i.py) |  |
 | 670.maximum-swap | [✓](TwoPointer/670.maximum-swap.go) | [✓](TwoPointer/670.maximum-swap.py) |  |
 | 680.valid-palindrome-ii | [✓](TwoPointer/680.valid-palindrome-ii.go) |  |  |

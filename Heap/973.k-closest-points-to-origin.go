@@ -49,7 +49,8 @@ func kClosest(points [][]int, k int) [][]int {
 	}
 	return h
 }
-//NOTE
+
+// NOTE:
 func kClosest(points [][]int, k int) [][]int {
 	var h maxHeap
 	heap.Init(&h)
@@ -61,4 +62,3 @@ func kClosest(points [][]int, k int) [][]int {
 	}
 	return h
 }
-
