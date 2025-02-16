@@ -38,3 +38,34 @@ func addStrings(num1 string, num2 string) string {
 
 // @leet end
 
+func addStrings(num1 string, num2 string) string {
+	var (
+		l1, l2 = len(num1) - 1, len(num2) - 1
+		res    []byte
+		carry  = 0
+		total  = 0
+	)
+	for l1 >= 0 || l2 >= 0 {
+		if l1 < 0 {
+			total = int(num2[l2]-'0') + carry
+		}
+		if l2 < 0 {
+			total = int(num1[l1]-'0') + carry
+		}
+		if l1 >= 0 && l2 >= 0 {
+			total = int(num1[l1]-'0') + int(num2[l2]-'0') + carry
+		}
+		carry = total / 10
+		res = append(res, byte(total%10+'0'))
+		l1--
+		l2--
+	}
+	if carry == 1 {
+		res = append(res, byte(1+'0'))
+	}
+	slices.Reverse(res)
+	return string(res)
+}
+
+
+
