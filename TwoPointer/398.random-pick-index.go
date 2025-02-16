@@ -18,7 +18,7 @@ func Constructor(nums []int) Solution {
 	for i, v := range nums {
 		arr[i] = i1{i, v}
 	}
-	sort.Slice(arr, func(i, j int) bool {
+	sort.Slice(arr, func(i, j int) bool { // NOTE: over complicated
 		return arr[i].v < arr[j].v
 	})
 	return Solution{
@@ -73,4 +73,29 @@ func (this *Solution) Pick(target int) int {
  * param_1 := obj.Pick(target);
  */
 // @leet end
+
+type Solution struct {
+	m map[int][]int
+}
+
+func Constructor(nums []int) Solution {
+	m := map[int][]int{}
+	for i, v := range nums {
+		m[v] = append(m[v], i)
+	}
+	return Solution{m}
+}
+
+func (this *Solution) Pick(target int) int {
+	idx := this.m[target]
+	n := rand.Intn(len(idx))
+	return idx[n]
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * obj := Constructor(nums);
+ * param_1 := obj.Pick(target);
+ */
+
 
