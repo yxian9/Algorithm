@@ -12,6 +12,7 @@ type Node struct {
 	Right     *Node
 	Parent    *Node
 	Neighbors []*Node
+	Random    *Node
 }
 type ListNode struct {
 	Val  int

@@ -32,6 +32,8 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| 14.longest-common-prefix |  | [✓](BinarySearch/14.longest-common-prefix.py) |  |
+| 1539.kth-missing-positive-number |  | [✓](BinarySearch/1539.kth-missing-positive-number.py) |  |
 | 162.find-peak-element | [✓](BinarySearch/162.find-peak-element.go) |  |  |
 | 34.find-first-and-last-position-of-element-in-sorted-array | [✓](BinarySearch/34.find-first-and-last-position-of-element-in-sorted-array.go) |  |  |
 
@@ -44,13 +46,13 @@
 | 105.construct-binary-tree-from-preorder-and-inorder-traversal | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
 | 106.construct-binary-tree-from-inorder-and-postorder-traversal | [✓](DFS/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
 | 110.balanced-binary-tree | [✓](DFS/110.balanced-binary-tree.go) | [✓](DFS/110.balanced-binary-tree.py) | [✓](DFS/110.balanced-binary-tree.ts) |
-| 129.sum-root-to-leaf-numbers | [✓](DFS/129.sum-root-to-leaf-numbers.go) |  |  |
-| 133.clone-graph | [✓](DFS/133.clone-graph.go) |  |  |
+| 129.sum-root-to-leaf-numbers | [✓](DFS/129.sum-root-to-leaf-numbers.go) | [✓](DFS/129.sum-root-to-leaf-numbers.py) |  |
+| 133.clone-graph | [✓](DFS/133.clone-graph.go) | [✓](DFS/133.clone-graph.py) |  |
 | 139.word-break | [✓](DFS/139.word-break.go) |  |  |
 | 1448.count-good-nodes-in-binary-tree | [✓](DFS/1448.count-good-nodes-in-binary-tree.go) | [✓](DFS/1448.count-good-nodes-in-binary-tree.py) | [✓](DFS/1448.count-good-nodes-in-binary-tree.ts) |
 | 1650.lowest-common-ancestor-of-a-binary-tree-iii | [✓](DFS/1650.lowest-common-ancestor-of-a-binary-tree-iii.go) |  |  |
 | 206.reverse-linked-list |  |  | [✓](DFS/206.reverse-linked-list.ts) |
-| 23.merge-k-sorted-lists | [✓](DFS/23.merge-k-sorted-lists.go) |  |  |
+| 23.merge-k-sorted-lists | [✓](DFS/23.merge-k-sorted-lists.go) | [✓](DFS/23.merge-k-sorted-lists.py) |  |
 | 235.lowest-common-ancestor-of-a-binary-search-tree | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
 | 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.ts) |
 | 282.expression-add-operators | [✓](DFS/282.expression-add-operators.go) |  |  |
@@ -61,6 +63,7 @@
 | 572.subtree-of-another-tree | [✓](DFS/572.subtree-of-another-tree.go) | [✓](DFS/572.subtree-of-another-tree.py) | [✓](DFS/572.subtree-of-another-tree.ts) |
 | 695.max-area-of-island | [✓](DFS/695.max-area-of-island.go) |  |  |
 | 701.insert-into-a-binary-search-tree | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
+| 827.making-a-large-island |  | [✓](DFS/827.making-a-large-island.py) |  |
 | 88.merge-sorted-array | [✓](DFS/88.merge-sorted-array.go) |  |  |
 | 938.range-sum-of-bst | [✓](DFS/938.range-sum-of-bst.go) |  |  |
 | 971.flip-binary-tree-to-match-preorder-traversal |  |  | [✓](DFS/971.flip-binary-tree-to-match-preorder-traversal.ts) |
@@ -72,7 +75,7 @@
 |-----------|----|---------|-----------|
 | 146.lru-cache | [✓](DataStructure/146.lru-cache.go) | [✓](DataStructure/146.lru-cache.py) |  |
 | 1570.dot-product-of-two-sparse-vectors | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.go) |  | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.ts) |
-| 707.design-linked-list | [✓](DataStructure/707.design-linked-list.go) |  |  |
+| 707.design-linked-list | [✓](DataStructure/707.design-linked-list.go) | [✓](DataStructure/707.design-linked-list.py) |  |
 
 ## DynamicProgramming
 
@@ -85,7 +88,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 48.rotate-image | [✓](Graph/48.rotate-image.go) |  |  |
-| 498.diagonal-traverse | [✓](Graph/498.diagonal-traverse.go) |  |  |
+| 498.diagonal-traverse | [✓](Graph/498.diagonal-traverse.go) | [✓](Graph/498.diagonal-traverse.py) |  |
 | 827.making-a-large-island | [✓](Graph/827.making-a-large-island.go) |  |  |
 
 ## Heap
@@ -101,7 +104,8 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 523.continuous-subarray-sum | [✓](PrefixSum/523.continuous-subarray-sum.go) | [✓](PrefixSum/523.continuous-subarray-sum.py) |  |
-| 560.subarray-sum-equals-k | [✓](PrefixSum/560.subarray-sum-equals-k.go) |  |  |
+| 528.random-pick-with-weight |  | [✓](PrefixSum/528.random-pick-with-weight.py) |  |
+| 560.subarray-sum-equals-k | [✓](PrefixSum/560.subarray-sum-equals-k.go) | [✓](PrefixSum/560.subarray-sum-equals-k.py) |  |
 
 ## Stack
 
@@ -110,17 +114,18 @@
 | 20.valid-parentheses | [✓](Stack/20.valid-parentheses.go) |  |  |
 | 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) | [✓](Stack/239.sliding-window-maximum.py) |  |
 | 71.simplify-path | [✓](Stack/71.simplify-path.go) |  |  |
+| 921.minimum-add-to-make-parentheses-valid | [✓](Stack/921.minimum-add-to-make-parentheses-valid.go) | [✓](Stack/921.minimum-add-to-make-parentheses-valid.py) |  |
 
 ## TwoPointer
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 1.two-sum | [✓](TwoPointer/1.two-sum.go) | [✓](TwoPointer/1.two-sum.py) | [✓](TwoPointer/1.two-sum.ts) |
-| 1004.max-consecutive-ones-iii | [✓](TwoPointer/1004.max-consecutive-ones-iii.go) |  |  |
-| 121.best-time-to-buy-and-sell-stock | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.go) |  |  |
+| 1004.max-consecutive-ones-iii | [✓](TwoPointer/1004.max-consecutive-ones-iii.go) | [✓](TwoPointer/1004.max-consecutive-ones-iii.py) |  |
+| 121.best-time-to-buy-and-sell-stock | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.go) | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.py) |  |
 | 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPointer/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
 | 125.valid-palindrome | [✓](TwoPointer/125.valid-palindrome.go) | [✓](TwoPointer/125.valid-palindrome.py) |  |
-| 138.copy-list-with-random-pointer | [✓](TwoPointer/138.copy-list-with-random-pointer.go) |  |  |
+| 138.copy-list-with-random-pointer | [✓](TwoPointer/138.copy-list-with-random-pointer.go) | [✓](TwoPointer/138.copy-list-with-random-pointer.py) |  |
 | 14.longest-common-prefix | [✓](TwoPointer/14.longest-common-prefix.go) |  |  |
 | 15.3sum | [✓](TwoPointer/15.3sum.go) | [✓](TwoPointer/15.3sum.py) |  |
 | 1539.kth-missing-positive-number | [✓](TwoPointer/1539.kth-missing-positive-number.go) |  |  |
@@ -132,24 +137,25 @@
 | 26.remove-duplicates-from-sorted-array | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.go) |  |  |
 | 270.closest-binary-search-tree-value | [✓](TwoPointer/270.closest-binary-search-tree-value.go) |  |  |
 | 28.find-the-index-of-the-first-occurrence-in-a-string | [✓](TwoPointer/28.find-the-index-of-the-first-occurrence-in-a-string.go) |  |  |
-| 31.next-permutation | [✓](TwoPointer/31.next-permutation.go) |  |  |
+| 31.next-permutation | [✓](TwoPointer/31.next-permutation.go) | [✓](TwoPointer/31.next-permutation.py) |  |
 | 346.moving-average-from-data-stream | [✓](TwoPointer/346.moving-average-from-data-stream.go) |  |  |
-| 398.random-pick-index | [✓](TwoPointer/398.random-pick-index.go) |  |  |
+| 398.random-pick-index | [✓](TwoPointer/398.random-pick-index.go) | [✓](TwoPointer/398.random-pick-index.py) |  |
 | 408.valid-word-abbreviation | [✓](TwoPointer/408.valid-word-abbreviation.go) |  |  |
-| 415.add-strings | [✓](TwoPointer/415.add-strings.go) |  |  |
+| 415.add-strings | [✓](TwoPointer/415.add-strings.go) | [✓](TwoPointer/415.add-strings.py) |  |
 | 528.random-pick-with-weight | [✓](TwoPointer/528.random-pick-with-weight.go) |  |  |
 | 53.maximum-subarray | [✓](TwoPointer/53.maximum-subarray.go) |  |  |
 | 56.merge-intervals | [✓](TwoPointer/56.merge-intervals.go) | [✓](TwoPointer/56.merge-intervals.py) |  |
 | 643.maximum-average-subarray-i | [✓](TwoPointer/643.maximum-average-subarray-i.go) | [✓](TwoPointer/643.maximum-average-subarray-i.py) |  |
 | 670.maximum-swap | [✓](TwoPointer/670.maximum-swap.go) | [✓](TwoPointer/670.maximum-swap.py) |  |
-| 680.valid-palindrome-ii | [✓](TwoPointer/680.valid-palindrome-ii.go) |  |  |
+| 680.valid-palindrome-ii | [✓](TwoPointer/680.valid-palindrome-ii.go) | [✓](TwoPointer/680.valid-palindrome-ii.py) |  |
 | 7.reverse-integer | [✓](TwoPointer/7.reverse-integer.go) |  |  |
 | 71.simplify-path |  | [✓](TwoPointer/71.simplify-path.py) |  |
-| 76.minimum-window-substring | [✓](TwoPointer/76.minimum-window-substring.go) |  |  |
-| 766.toeplitz-matrix | [✓](TwoPointer/766.toeplitz-matrix.go) |  |  |
+| 76.minimum-window-substring | [✓](TwoPointer/76.minimum-window-substring.go) | [✓](TwoPointer/76.minimum-window-substring.py) |  |
+| 766.toeplitz-matrix | [✓](TwoPointer/766.toeplitz-matrix.go) | [✓](TwoPointer/766.toeplitz-matrix.py) |  |
+| 791.custom-sort-string | [✓](TwoPointer/791.custom-sort-string.go) | [✓](TwoPointer/791.custom-sort-string.py) |  |
 | 88.merge-sorted-array |  | [✓](TwoPointer/88.merge-sorted-array.py) |  |
 | 9.palindrome-number | [✓](TwoPointer/9.palindrome-number.go) |  |  |
-| 986.interval-list-intersections | [✓](TwoPointer/986.interval-list-intersections.go) |  |  |
+| 986.interval-list-intersections | [✓](TwoPointer/986.interval-list-intersections.go) | [✓](TwoPointer/986.interval-list-intersections.py) |  |
 
 ## UnionFind
 
