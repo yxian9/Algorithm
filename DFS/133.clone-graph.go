@@ -36,4 +36,38 @@ func cloneGraph(node *Node) *Node {
 }
 
 // @leet end
+func cloneGraph(node *Node) *Node {
+	var (
+		copied = map[*Node]*Node{}
+		dfs    func(*Node)
+	)
+	dfs = func(node *Node) {
+		if node == nil {
+			return
+		}
+		copied[node] = &Node{Val: node.Val}
+		for _, item := range node.Neighbors {
+			if copied[item] == nil {
+				dfs(item)
+			}
+			copied[node].Neighbors = append(copied[node].Neighbors, copied[item])
+		}
+	}
+	dfs(node)
+	return copied[node]
+}
+
+// @leet end
+
+func cloneGraph2(node *Node) *Node {
+	if node == nil {
+		return nil
+	}
+	nn := &Node{Val: node.Val}
+	for _, v := range node.Neighbors {
+		nn.Neighbors = append(nn.Neighbors, cloneGraph(v))
+		// NOTE: this will not work seem it will self connected.
+	}
+	return nn
+}
 
