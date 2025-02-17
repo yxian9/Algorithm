@@ -10,6 +10,34 @@ class Node:
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
 """
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val = 0, neighbors = None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+"""
+
+
+class Solution:
+    def cloneGraph(self, node: Optional["Node"]) -> Optional["Node"]:
+        m = {}  # NOTE: simple map
+
+        def dfs(node):
+            if node is None:
+                return
+            m[node] = Node(node.val)
+            for item in node.neighbors:
+                if item not in m:
+                    dfs(item)
+                m[node].neighbors.append(m[item])
+
+        dfs(node)
+        if node in m:
+            return m[node]
+        return None
+
+
 
 
 class Solution:
