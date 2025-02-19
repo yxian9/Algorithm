@@ -113,6 +113,7 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| 1047.remove-all-adjacent-duplicates-in-string |  | [✓](Stack/1047.remove-all-adjacent-duplicates-in-string.py) |  |
 | 20.valid-parentheses | [✓](Stack/20.valid-parentheses.go) |  |  |
 | 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) | [✓](Stack/239.sliding-window-maximum.py) |  |
 | 71.simplify-path | [✓](Stack/71.simplify-path.go) |  |  |
@@ -127,6 +128,7 @@
 | 121.best-time-to-buy-and-sell-stock | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.go) | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.py) |  |
 | 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPointer/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
 | 125.valid-palindrome | [✓](TwoPointer/125.valid-palindrome.go) | [✓](TwoPointer/125.valid-palindrome.py) |  |
+| 13.roman-to-integer | [✓](TwoPointer/13.roman-to-integer.go) |  |  |
 | 138.copy-list-with-random-pointer | [✓](TwoPointer/138.copy-list-with-random-pointer.go) | [✓](TwoPointer/138.copy-list-with-random-pointer.py) |  |
 | 14.longest-common-prefix | [✓](TwoPointer/14.longest-common-prefix.go) |  |  |
 | 15.3sum | [✓](TwoPointer/15.3sum.go) | [✓](TwoPointer/15.3sum.py) |  |
@@ -136,6 +138,7 @@
 | 19.remove-nth-node-from-end-of-list | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.go) | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.py) | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.ts) |
 | 2.add-two-numbers | [✓](TwoPointer/2.add-two-numbers.go) | [✓](TwoPointer/2.add-two-numbers.py) | [✓](TwoPointer/2.add-two-numbers.ts) |
 | 20.valid-parentheses |  | [✓](TwoPointer/20.valid-parentheses.py) |  |
+| 219.contains-duplicate-ii | [✓](TwoPointer/219.contains-duplicate-ii.go) | [✓](TwoPointer/219.contains-duplicate-ii.py) |  |
 | 227.basic-calculator-ii | [✓](TwoPointer/227.basic-calculator-ii.go) | [✓](TwoPointer/227.basic-calculator-ii.py) |  |
 | 249.group-shifted-strings | [✓](TwoPointer/249.group-shifted-strings.go) |  |  |
 | 26.remove-duplicates-from-sorted-array | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.go) | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.py) |  |
@@ -148,8 +151,9 @@
 | 408.valid-word-abbreviation | [✓](TwoPointer/408.valid-word-abbreviation.go) |  |  |
 | 415.add-strings | [✓](TwoPointer/415.add-strings.go) | [✓](TwoPointer/415.add-strings.py) |  |
 | 528.random-pick-with-weight | [✓](TwoPointer/528.random-pick-with-weight.go) |  |  |
-| 53.maximum-subarray | [✓](TwoPointer/53.maximum-subarray.go) |  |  |
+| 53.maximum-subarray | [✓](TwoPointer/53.maximum-subarray.go) | [✓](TwoPointer/53.maximum-subarray.py) |  |
 | 56.merge-intervals | [✓](TwoPointer/56.merge-intervals.go) | [✓](TwoPointer/56.merge-intervals.py) |  |
+| 636.exclusive-time-of-functions |  | [✓](TwoPointer/636.exclusive-time-of-functions.py) |  |
 | 643.maximum-average-subarray-i | [✓](TwoPointer/643.maximum-average-subarray-i.go) | [✓](TwoPointer/643.maximum-average-subarray-i.py) |  |
 | 647.palindromic-substrings |  | [✓](TwoPointer/647.palindromic-substrings.py) | [✓](TwoPointer/647.palindromic-substrings.ts) |
 | 670.maximum-swap | [✓](TwoPointer/670.maximum-swap.go) | [✓](TwoPointer/670.maximum-swap.py) |  |
