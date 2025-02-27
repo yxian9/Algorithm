@@ -28,4 +28,31 @@ class Solution:
 
 
 # @leet end
+def minWindow(self, s: str, t: str) -> str:
+        window = Counter()
+        need = Counter(t)
+        l = r = minL = bestL = valid = 0
+        for r in range(len(s)):
+            c = s[r]
 
+            if need[c]:
+                window[c] += 1
+                if window[c] == need[c]:
+                    valid += 1
+
+            while valid == len(
+                need
+            ):  # NOTE: can include other char, no need fix window
+                curL = r - l + 1
+                if minL == 0 or curL < minL:
+                    minL = curL
+                    bestL = l
+                d = s[l]
+                l += 1
+
+                if d in need:
+                    window[d] -= 1
+                    if window[d] < need[d]:
+                        valid -= 1
+
+        return s[bestL : bestL + minL]
