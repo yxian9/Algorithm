@@ -37,6 +37,9 @@
 | 14.longest-common-prefix |  | [✓](BinarySearch/14.longest-common-prefix.py) |  |
 | 1539.kth-missing-positive-number |  | [✓](BinarySearch/1539.kth-missing-positive-number.py) |  |
 | 162.find-peak-element | [✓](BinarySearch/162.find-peak-element.go) |  |  |
+| 1752.check-if-array-is-sorted-and-rotated |  | [✓](BinarySearch/1752.check-if-array-is-sorted-and-rotated.py) |  |
+| 3105.longest-strictly-increasing-or-strictly-decreasing-subarray |  | [✓](BinarySearch/3105.longest-strictly-increasing-or-strictly-decreasing-subarray.py) |  |
+| 33.search-in-rotated-sorted-array |  | [✓](BinarySearch/33.search-in-rotated-sorted-array.py) |  |
 | 34.find-first-and-last-position-of-element-in-sorted-array | [✓](BinarySearch/34.find-first-and-last-position-of-element-in-sorted-array.go) |  |  |
 | 81.search-in-rotated-sorted-array-ii |  | [✓](BinarySearch/81.search-in-rotated-sorted-array-ii.py) |  |
 
@@ -49,6 +52,7 @@
 | 105.construct-binary-tree-from-preorder-and-inorder-traversal | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
 | 106.construct-binary-tree-from-inorder-and-postorder-traversal | [✓](DFS/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
 | 110.balanced-binary-tree | [✓](DFS/110.balanced-binary-tree.go) | [✓](DFS/110.balanced-binary-tree.py) | [✓](DFS/110.balanced-binary-tree.ts) |
+| 1123.lowest-common-ancestor-of-deepest-leaves |  | [✓](DFS/1123.lowest-common-ancestor-of-deepest-leaves.py) |  |
 | 129.sum-root-to-leaf-numbers | [✓](DFS/129.sum-root-to-leaf-numbers.go) | [✓](DFS/129.sum-root-to-leaf-numbers.py) |  |
 | 133.clone-graph | [✓](DFS/133.clone-graph.go) | [✓](DFS/133.clone-graph.py) |  |
 | 139.word-break | [✓](DFS/139.word-break.go) |  |  |
@@ -62,6 +66,7 @@
 | 235.lowest-common-ancestor-of-a-binary-search-tree | [✓](DFS/235.lowest-common-ancestor-of-a-binary-search-tree.go) |  |  |
 | 236.lowest-common-ancestor-of-a-binary-tree | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.go) |  | [✓](DFS/236.lowest-common-ancestor-of-a-binary-tree.ts) |
 | 282.expression-add-operators | [✓](DFS/282.expression-add-operators.go) |  |  |
+| 301.remove-invalid-parentheses |  | [✓](DFS/301.remove-invalid-parentheses.py) | [✓](DFS/301.remove-invalid-parentheses.ts) |
 | 329.longest-increasing-path-in-a-matrix | [✓](DFS/329.longest-increasing-path-in-a-matrix.go) |  |  |
 | 339.nested-list-weight-sum | [✓](DFS/339.nested-list-weight-sum.go) |  |  |
 | 426.convert-binary-search-tree-to-sorted-doubly-linked-list | [✓](DFS/426.convert-binary-search-tree-to-sorted-doubly-linked-list.go) |  |  |
@@ -85,6 +90,7 @@
 | 1570.dot-product-of-two-sparse-vectors | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.go) |  | [✓](DataStructure/1570.dot-product-of-two-sparse-vectors.ts) |
 | 2326.spiral-matrix-iv |  | [✓](DataStructure/2326.spiral-matrix-iv.py) |  |
 | 380.insert-delete-getrandom-o1 | [✓](DataStructure/380.insert-delete-getrandom-o1.go) | [✓](DataStructure/380.insert-delete-getrandom-o1.py) |  |
+| 432.all-oone-data-structure |  | [✓](DataStructure/432.all-oone-data-structure.py) |  |
 | 59.spiral-matrix-ii |  | [✓](DataStructure/59.spiral-matrix-ii.py) |  |
 | 707.design-linked-list | [✓](DataStructure/707.design-linked-list.go) | [✓](DataStructure/707.design-linked-list.py) |  |
 | 973.k-closest-points-to-origin |  | [✓](DataStructure/973.k-closest-points-to-origin.py) |  |
@@ -96,6 +102,7 @@
 | 139.word-break |  | [✓](DynamicProgramming/139.word-break.py) | [✓](DynamicProgramming/139.word-break.ts) |
 | 494.target-sum | [✓](DynamicProgramming/494.target-sum.go) | [✓](DynamicProgramming/494.target-sum.py) | [✓](DynamicProgramming/494.target-sum.ts) |
 | 62.unique-paths |  | [✓](DynamicProgramming/62.unique-paths.py) |  |
+| 63.unique-paths-ii |  | [✓](DynamicProgramming/63.unique-paths-ii.py) |  |
 
 ## Graph
 
@@ -104,6 +111,12 @@
 | 48.rotate-image | [✓](Graph/48.rotate-image.go) |  |  |
 | 498.diagonal-traverse | [✓](Graph/498.diagonal-traverse.go) | [✓](Graph/498.diagonal-traverse.py) |  |
 | 827.making-a-large-island | [✓](Graph/827.making-a-large-island.go) |  |  |
+
+## Greedy
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 45.jump-game-ii |  | [✓](Greedy/45.jump-game-ii.py) |  |
 
 ## Heap
 
@@ -128,10 +141,12 @@
 |-----------|----|---------|-----------|
 | 1047.remove-all-adjacent-duplicates-in-string |  | [✓](Stack/1047.remove-all-adjacent-duplicates-in-string.py) |  |
 | 155.min-stack | [✓](Stack/155.min-stack.go) | [✓](Stack/155.min-stack.py) |  |
+| 173.binary-search-tree-iterator | [✓](Stack/173.binary-search-tree-iterator.go) | [✓](Stack/173.binary-search-tree-iterator.py) |  |
 | 20.valid-parentheses | [✓](Stack/20.valid-parentheses.go) |  |  |
 | 239.sliding-window-maximum | [✓](Stack/239.sliding-window-maximum.go) | [✓](Stack/239.sliding-window-maximum.py) |  |
 | 394.decode-string | [✓](Stack/394.decode-string.go) | [✓](Stack/394.decode-string.py) |  |
 | 71.simplify-path | [✓](Stack/71.simplify-path.go) |  |  |
+| 739.daily-temperatures |  | [✓](Stack/739.daily-temperatures.py) |  |
 | 84.largest-rectangle-in-histogram | [✓](Stack/84.largest-rectangle-in-histogram.go) | [✓](Stack/84.largest-rectangle-in-histogram.py) |  |
 | 921.minimum-add-to-make-parentheses-valid | [✓](Stack/921.minimum-add-to-make-parentheses-valid.go) | [✓](Stack/921.minimum-add-to-make-parentheses-valid.py) |  |
 
@@ -157,18 +172,22 @@
 | 167.two-sum-ii-input-array-is-sorted |  | [✓](TwoPointer/167.two-sum-ii-input-array-is-sorted.py) |  |
 | 169.majority-element | [✓](TwoPointer/169.majority-element.go) | [✓](TwoPointer/169.majority-element.py) | [✓](TwoPointer/169.majority-element.ts) |
 | 1748.sum-of-unique-elements |  | [✓](TwoPointer/1748.sum-of-unique-elements.py) |  |
+| 1768.merge-strings-alternately |  | [✓](TwoPointer/1768.merge-strings-alternately.py) |  |
+| 1790.check-if-one-string-swap-can-make-strings-equal |  | [✓](TwoPointer/1790.check-if-one-string-swap-can-make-strings-equal.py) |  |
 | 19.remove-nth-node-from-end-of-list | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.go) | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.py) | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.ts) |
 | 2.add-two-numbers | [✓](TwoPointer/2.add-two-numbers.go) | [✓](TwoPointer/2.add-two-numbers.py) | [✓](TwoPointer/2.add-two-numbers.ts) |
 | 20.valid-parentheses |  | [✓](TwoPointer/20.valid-parentheses.py) |  |
 | 2013.detect-squares | [✓](TwoPointer/2013.detect-squares.go) | [✓](TwoPointer/2013.detect-squares.py) |  |
+| 209.minimum-size-subarray-sum |  | [✓](TwoPointer/209.minimum-size-subarray-sum.py) |  |
 | 2116.check-if-a-parentheses-string-can-be-valid | [✓](TwoPointer/2116.check-if-a-parentheses-string-can-be-valid.go) | [✓](TwoPointer/2116.check-if-a-parentheses-string-can-be-valid.py) |  |
 | 219.contains-duplicate-ii | [✓](TwoPointer/219.contains-duplicate-ii.go) | [✓](TwoPointer/219.contains-duplicate-ii.py) |  |
 | 227.basic-calculator-ii | [✓](TwoPointer/227.basic-calculator-ii.go) | [✓](TwoPointer/227.basic-calculator-ii.py) |  |
 | 242.valid-anagram |  | [✓](TwoPointer/242.valid-anagram.py) |  |
 | 249.group-shifted-strings | [✓](TwoPointer/249.group-shifted-strings.go) |  |  |
 | 26.remove-duplicates-from-sorted-array | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.go) | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.py) |  |
+| 268.missing-number |  | [✓](TwoPointer/268.missing-number.py) |  |
 | 270.closest-binary-search-tree-value | [✓](TwoPointer/270.closest-binary-search-tree-value.go) |  |  |
-| 28.find-the-index-of-the-first-occurrence-in-a-string | [✓](TwoPointer/28.find-the-index-of-the-first-occurrence-in-a-string.go) |  |  |
+| 28.find-the-index-of-the-first-occurrence-in-a-string | [✓](TwoPointer/28.find-the-index-of-the-first-occurrence-in-a-string.go) | [✓](TwoPointer/28.find-the-index-of-the-first-occurrence-in-a-string.py) |  |
 | 287.find-the-duplicate-number | [✓](TwoPointer/287.find-the-duplicate-number.go) | [✓](TwoPointer/287.find-the-duplicate-number.py) |  |
 | 3.longest-substring-without-repeating-characters | [✓](TwoPointer/3.longest-substring-without-repeating-characters.go) | [✓](TwoPointer/3.longest-substring-without-repeating-characters.py) |  |
 | 31.next-permutation | [✓](TwoPointer/31.next-permutation.go) | [✓](TwoPointer/31.next-permutation.py) |  |
@@ -179,17 +198,21 @@
 | 408.valid-word-abbreviation | [✓](TwoPointer/408.valid-word-abbreviation.go) |  |  |
 | 415.add-strings | [✓](TwoPointer/415.add-strings.go) | [✓](TwoPointer/415.add-strings.py) |  |
 | 424.longest-repeating-character-replacement | [✓](TwoPointer/424.longest-repeating-character-replacement.go) | [✓](TwoPointer/424.longest-repeating-character-replacement.py) |  |
+| 43.multiply-strings |  | [✓](TwoPointer/43.multiply-strings.py) |  |
+| 438.find-all-anagrams-in-a-string |  | [✓](TwoPointer/438.find-all-anagrams-in-a-string.py) |  |
 | 49.group-anagrams | [✓](TwoPointer/49.group-anagrams.go) | [✓](TwoPointer/49.group-anagrams.py) |  |
 | 528.random-pick-with-weight | [✓](TwoPointer/528.random-pick-with-weight.go) |  |  |
 | 53.maximum-subarray | [✓](TwoPointer/53.maximum-subarray.go) | [✓](TwoPointer/53.maximum-subarray.py) |  |
 | 56.merge-intervals | [✓](TwoPointer/56.merge-intervals.go) | [✓](TwoPointer/56.merge-intervals.py) |  |
+| 567.permutation-in-string |  | [✓](TwoPointer/567.permutation-in-string.py) |  |
+| 609.find-duplicate-file-in-system |  | [✓](TwoPointer/609.find-duplicate-file-in-system.py) |  |
 | 636.exclusive-time-of-functions |  | [✓](TwoPointer/636.exclusive-time-of-functions.py) |  |
 | 643.maximum-average-subarray-i | [✓](TwoPointer/643.maximum-average-subarray-i.go) | [✓](TwoPointer/643.maximum-average-subarray-i.py) |  |
 | 647.palindromic-substrings |  | [✓](TwoPointer/647.palindromic-substrings.py) | [✓](TwoPointer/647.palindromic-substrings.ts) |
 | 66.plus-one | [✓](TwoPointer/66.plus-one.go) | [✓](TwoPointer/66.plus-one.py) |  |
 | 670.maximum-swap | [✓](TwoPointer/670.maximum-swap.go) | [✓](TwoPointer/670.maximum-swap.py) |  |
 | 680.valid-palindrome-ii | [✓](TwoPointer/680.valid-palindrome-ii.go) | [✓](TwoPointer/680.valid-palindrome-ii.py) |  |
-| 7.reverse-integer | [✓](TwoPointer/7.reverse-integer.go) |  |  |
+| 7.reverse-integer | [✓](TwoPointer/7.reverse-integer.go) | [✓](TwoPointer/7.reverse-integer.py) |  |
 | 70.climbing-stairs |  | [✓](TwoPointer/70.climbing-stairs.py) |  |
 | 71.simplify-path |  | [✓](TwoPointer/71.simplify-path.py) |  |
 | 75.sort-colors | [✓](TwoPointer/75.sort-colors.go) | [✓](TwoPointer/75.sort-colors.py) |  |
