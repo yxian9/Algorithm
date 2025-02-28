@@ -99,10 +99,14 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| 1143.longest-common-subsequence |  | [✓](DynamicProgramming/1143.longest-common-subsequence.py) |  |
+| 1312.minimum-insertion-steps-to-make-a-string-palindrome |  | [✓](DynamicProgramming/1312.minimum-insertion-steps-to-make-a-string-palindrome.py) |  |
 | 139.word-break |  | [✓](DynamicProgramming/139.word-break.py) | [✓](DynamicProgramming/139.word-break.ts) |
 | 494.target-sum | [✓](DynamicProgramming/494.target-sum.go) | [✓](DynamicProgramming/494.target-sum.py) | [✓](DynamicProgramming/494.target-sum.ts) |
+| 516.longest-palindromic-subsequence |  | [✓](DynamicProgramming/516.longest-palindromic-subsequence.py) |  |
 | 62.unique-paths |  | [✓](DynamicProgramming/62.unique-paths.py) |  |
 | 63.unique-paths-ii |  | [✓](DynamicProgramming/63.unique-paths-ii.py) |  |
+| 72.edit-distance |  | [✓](DynamicProgramming/72.edit-distance.py) |  |
 
 ## Graph
 
