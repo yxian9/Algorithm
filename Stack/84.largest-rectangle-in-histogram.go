@@ -17,7 +17,7 @@ func largestRectangleArea(heights []int) int {
 	// }
 	for i := range n {
 		v := heights[i]
-		for len(st) > 0 && heights[st[len(st)-1]] >= v {
+		for len(st) > 0 && heights[st[len(st)-1]] >= v { // NOTE: are you next smaller?, if not pop
 			st = st[:len(st)-1]
 		}
 		if len(st) > 0 {
