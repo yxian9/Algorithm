@@ -35,6 +35,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 14.longest-common-prefix |  | [✓](BinarySearch/14.longest-common-prefix.py) |  |
+| 153.find-minimum-in-rotated-sorted-array |  | [✓](BinarySearch/153.find-minimum-in-rotated-sorted-array.py) |  |
 | 1539.kth-missing-positive-number |  | [✓](BinarySearch/1539.kth-missing-positive-number.py) |  |
 | 162.find-peak-element | [✓](BinarySearch/162.find-peak-element.go) |  |  |
 | 1752.check-if-array-is-sorted-and-rotated |  | [✓](BinarySearch/1752.check-if-array-is-sorted-and-rotated.py) |  |
@@ -72,7 +73,7 @@
 | 426.convert-binary-search-tree-to-sorted-doubly-linked-list | [✓](DFS/426.convert-binary-search-tree-to-sorted-doubly-linked-list.go) |  |  |
 | 543.diameter-of-binary-tree | [✓](DFS/543.diameter-of-binary-tree.go) | [✓](DFS/543.diameter-of-binary-tree.py) | [✓](DFS/543.diameter-of-binary-tree.ts) |
 | 572.subtree-of-another-tree | [✓](DFS/572.subtree-of-another-tree.go) | [✓](DFS/572.subtree-of-another-tree.py) | [✓](DFS/572.subtree-of-another-tree.ts) |
-| 695.max-area-of-island | [✓](DFS/695.max-area-of-island.go) |  |  |
+| 695.max-area-of-island | [✓](DFS/695.max-area-of-island.go) | [✓](DFS/695.max-area-of-island.py) |  |
 | 701.insert-into-a-binary-search-tree | [✓](DFS/701.insert-into-a-binary-search-tree.go) | [✓](DFS/701.insert-into-a-binary-search-tree.py) |  |
 | 79.word-search | [✓](DFS/79.word-search.go) | [✓](DFS/79.word-search.py) |  |
 | 827.making-a-large-island |  | [✓](DFS/827.making-a-large-island.py) |  |
@@ -81,6 +82,7 @@
 | 958.check-completeness-of-a-binary-tree |  | [✓](DFS/958.check-completeness-of-a-binary-tree.py) |  |
 | 971.flip-binary-tree-to-match-preorder-traversal |  |  | [✓](DFS/971.flip-binary-tree-to-match-preorder-traversal.ts) |
 | 98.validate-binary-search-tree | [✓](DFS/98.validate-binary-search-tree.go) | [✓](DFS/98.validate-binary-search-tree.py) |  |
+| 99.recover-binary-search-tree |  | [✓](DFS/99.recover-binary-search-tree.py) |  |
 
 ## DataStructure
 
@@ -102,6 +104,8 @@
 | 1143.longest-common-subsequence |  | [✓](DynamicProgramming/1143.longest-common-subsequence.py) |  |
 | 1312.minimum-insertion-steps-to-make-a-string-palindrome |  | [✓](DynamicProgramming/1312.minimum-insertion-steps-to-make-a-string-palindrome.py) |  |
 | 139.word-break |  | [✓](DynamicProgramming/139.word-break.py) | [✓](DynamicProgramming/139.word-break.ts) |
+| 198.house-robber |  | [✓](DynamicProgramming/198.house-robber.py) |  |
+| 213.house-robber-ii |  | [✓](DynamicProgramming/213.house-robber-ii.py) |  |
 | 494.target-sum | [✓](DynamicProgramming/494.target-sum.go) | [✓](DynamicProgramming/494.target-sum.py) | [✓](DynamicProgramming/494.target-sum.ts) |
 | 516.longest-palindromic-subsequence |  | [✓](DynamicProgramming/516.longest-palindromic-subsequence.py) |  |
 | 62.unique-paths |  | [✓](DynamicProgramming/62.unique-paths.py) |  |
@@ -127,7 +131,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 215.kth-largest-element-in-an-array | [✓](Heap/215.kth-largest-element-in-an-array.go) |  | [✓](Heap/215.kth-largest-element-in-an-array.ts) |
-| 347.top-k-frequent-elements | [✓](Heap/347.top-k-frequent-elements.go) |  |  |
+| 347.top-k-frequent-elements | [✓](Heap/347.top-k-frequent-elements.go) | [✓](Heap/347.top-k-frequent-elements.py) |  |
 | 973.k-closest-points-to-origin | [✓](Heap/973.k-closest-points-to-origin.go) |  |  |
 
 ## PrefixSum
@@ -160,6 +164,7 @@
 |-----------|----|---------|-----------|
 | 1.two-sum | [✓](TwoPointer/1.two-sum.go) | [✓](TwoPointer/1.two-sum.py) | [✓](TwoPointer/1.two-sum.ts) |
 | 1004.max-consecutive-ones-iii | [✓](TwoPointer/1004.max-consecutive-ones-iii.go) | [✓](TwoPointer/1004.max-consecutive-ones-iii.py) |  |
+| 11.container-with-most-water |  | [✓](TwoPointer/11.container-with-most-water.py) |  |
 | 118.pascals-triangle |  | [✓](TwoPointer/118.pascals-triangle.py) |  |
 | 121.best-time-to-buy-and-sell-stock | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.go) | [✓](TwoPointer/121.best-time-to-buy-and-sell-stock.py) |  |
 | 1249.minimum-remove-to-make-valid-parentheses | [✓](TwoPointer/1249.minimum-remove-to-make-valid-parentheses.go) |  |  |
@@ -188,6 +193,7 @@
 | 227.basic-calculator-ii | [✓](TwoPointer/227.basic-calculator-ii.go) | [✓](TwoPointer/227.basic-calculator-ii.py) |  |
 | 242.valid-anagram |  | [✓](TwoPointer/242.valid-anagram.py) |  |
 | 249.group-shifted-strings | [✓](TwoPointer/249.group-shifted-strings.go) |  |  |
+| 2523.closest-prime-numbers-in-range |  | [✓](TwoPointer/2523.closest-prime-numbers-in-range.py) |  |
 | 26.remove-duplicates-from-sorted-array | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.go) | [✓](TwoPointer/26.remove-duplicates-from-sorted-array.py) |  |
 | 268.missing-number |  | [✓](TwoPointer/268.missing-number.py) |  |
 | 270.closest-binary-search-tree-value | [✓](TwoPointer/270.closest-binary-search-tree-value.go) |  |  |
@@ -196,11 +202,14 @@
 | 3.longest-substring-without-repeating-characters | [✓](TwoPointer/3.longest-substring-without-repeating-characters.go) | [✓](TwoPointer/3.longest-substring-without-repeating-characters.py) |  |
 | 31.next-permutation | [✓](TwoPointer/31.next-permutation.go) | [✓](TwoPointer/31.next-permutation.py) |  |
 | 346.moving-average-from-data-stream | [✓](TwoPointer/346.moving-average-from-data-stream.go) |  |  |
+| 36.valid-sudoku |  | [✓](TwoPointer/36.valid-sudoku.py) |  |
+| 37.sudoku-solver |  | [✓](TwoPointer/37.sudoku-solver.py) |  |
 | 38.count-and-say | [✓](TwoPointer/38.count-and-say.go) | [✓](TwoPointer/38.count-and-say.py) |  |
 | 393.utf-8-validation | [✓](TwoPointer/393.utf-8-validation.go) | [✓](TwoPointer/393.utf-8-validation.py) |  |
 | 398.random-pick-index | [✓](TwoPointer/398.random-pick-index.go) | [✓](TwoPointer/398.random-pick-index.py) |  |
 | 408.valid-word-abbreviation | [✓](TwoPointer/408.valid-word-abbreviation.go) |  |  |
 | 415.add-strings | [✓](TwoPointer/415.add-strings.go) | [✓](TwoPointer/415.add-strings.py) |  |
+| 42.trapping-rain-water |  | [✓](TwoPointer/42.trapping-rain-water.py) |  |
 | 424.longest-repeating-character-replacement | [✓](TwoPointer/424.longest-repeating-character-replacement.go) | [✓](TwoPointer/424.longest-repeating-character-replacement.py) |  |
 | 43.multiply-strings |  | [✓](TwoPointer/43.multiply-strings.py) |  |
 | 438.find-all-anagrams-in-a-string |  | [✓](TwoPointer/438.find-all-anagrams-in-a-string.py) |  |
@@ -224,6 +233,7 @@
 | 766.toeplitz-matrix | [✓](TwoPointer/766.toeplitz-matrix.go) | [✓](TwoPointer/766.toeplitz-matrix.py) |  |
 | 791.custom-sort-string | [✓](TwoPointer/791.custom-sort-string.go) | [✓](TwoPointer/791.custom-sort-string.py) |  |
 | 8.string-to-integer-atoi | [✓](TwoPointer/8.string-to-integer-atoi.go) | [✓](TwoPointer/8.string-to-integer-atoi.py) |  |
+| 853.car-fleet |  | [✓](TwoPointer/853.car-fleet.py) |  |
 | 875.koko-eating-bananas |  | [✓](TwoPointer/875.koko-eating-bananas.py) |  |
 | 88.merge-sorted-array |  | [✓](TwoPointer/88.merge-sorted-array.py) |  |
 | 9.palindrome-number | [✓](TwoPointer/9.palindrome-number.go) | [✓](TwoPointer/9.palindrome-number.py) |  |
