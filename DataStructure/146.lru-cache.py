@@ -1,63 +1,57 @@
 # @leet start
-
-
-class n:
-    def __init__(self, key=0, val=0, prev=None, next=None):
+class node:
+    def __init__(self, key, value, next=None, prev=None) -> None:
+        self.value = value
         self.key = key
-        self.val = val
-        self.prev = prev
         self.next = next
+        self.prev = prev
+
+    def detach(self):
+        self.prev.next = self.next  # type: ignore
+        self.next.prev = self.prev  # type: ignore
+        self.prev = self.next = None
 
 
 class LRUCache:
     def __init__(self, capacity: int):
-        dummy = n()
-        dummy.next = dummy
-        dummy.prev = dummy
-        self.capacity = capacity
+        dummy = node(0, 0)
+        dummy.next = dummy.prev = dummy
         self.dummy = dummy
-        self.m: dict[int, n] = {}
+        self.capacity = capacity
+        self.m = {}
 
-    def get(self, key: int) -> int:
-        if key in self.m:
-            x = self.m[key]
-            self.detach(x)
-            self.appendLeft(x)
-            return x.val
-        else:
-            return -1
-
-    def detach(self, x: n):
-        x.prev.next = x.next  # type: ignore
-        x.next.prev = x.prev  # type: ignore
-        x.prev, x.next = None, None
-
-    def appendLeft(self, x: n):
+    def appendLeft(self, x):
         x.prev = self.dummy
         x.next = self.dummy.next
         x.prev.next = x
         x.next.prev = x  # type: ignore
 
-    def put(self, key: int, value: int) -> None:
+    def getNode(self, key):
         if key in self.m:
             x = self.m[key]
-            x.val = value
-            self.detach(x)
+            x.detach()
             self.appendLeft(x)
+            return x
+        return None
+
+    def get(self, key: int) -> int:
+        n = self.getNode(key)
+        if n:
+            return n.value
+        return -1
+
+    def put(self, key: int, value: int) -> None:
+        n = self.getNode(key)
+        if n:
+            n.value = value
             return
-        nn = n(key, value)
+
+        if len(self.m) == self.capacity:
+            tail = self.dummy.prev
+            tail.detach()  # type: ignore
+            del self.m[tail.key]  # type: ignore
+
+        nn = node(key, value)
         self.m[key] = nn
         self.appendLeft(nn)
-        if len(self.m) > self.capacity:
-            lastItem = self.dummy.prev
-            if lastItem:  # for type annotation
-                self.detach(lastItem)
-                del self.m[lastItem.key]
-
-
-# Your LRUCache object will be instantiated and called as such:
-# obj = LRUCache(capacity)
-# param_1 = obj.get(key)
-# obj.put(key,value)
-# @leet end
 
