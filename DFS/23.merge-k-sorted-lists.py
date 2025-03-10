@@ -37,3 +37,24 @@ class Solution:
 
 # @leet end
 
+ListNode.__lt__ = lambda a, b: a.val < b.val
+
+class Solution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        if not lists:
+            return None
+        mheap = []
+        dummy = ListNode()
+        cur = dummy
+        for n in lists:
+            if n:
+                heappush(mheap, n)
+        while mheap:
+            top = heappop(mheap)
+            cur.next = top
+            cur = cur.next
+            if top.next:
+                heappush(mheap, top.next)
+        return dummy.next
+
+
