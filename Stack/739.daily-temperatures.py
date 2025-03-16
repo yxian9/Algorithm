@@ -7,6 +7,7 @@ def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         for i in range(n - 1, -1, -1):
             # NOTE: dirction is opposite to (next) greater/smaller
             # when do compare, put the need update item to left side
+            # pop invalid item, put need check item on left hand, <= is invalid
             while st and temperatures[st[-1]] <= temperatures[i]:
                 st.pop()
 
