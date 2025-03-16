@@ -26,3 +26,26 @@ class Solution:
 
 # @leet end
 
+candidates.sort(reverse=True)
+        ret = []
+        path =[]
+        seen = set()
+        def dfs(idx,total):
+            if total == target:
+                ret.append(path[:])
+                return
+            if total > target:
+                return
+            for i in range(idx, len(candidates)):
+                if i >0 and candidates[i] == candidates[i-1] and  i-1 not in seen:
+                    continue
+                if i in seen:
+                    continue
+                seen.add(i)
+                item = candidates[i]
+                path.append(item)
+                dfs(i, total + item)
+                path.pop()
+                seen.remove(i)
+        dfs(0,0)
+        return ret
