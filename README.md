@@ -130,9 +130,17 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
-| 215.kth-largest-element-in-an-array | [✓](Heap/215.kth-largest-element-in-an-array.go) |  | [✓](Heap/215.kth-largest-element-in-an-array.ts) |
+| 215.kth-largest-element-in-an-array | [✓](Heap/215.kth-largest-element-in-an-array.go) | [✓](Heap/215.kth-largest-element-in-an-array.py) | [✓](Heap/215.kth-largest-element-in-an-array.ts) |
 | 347.top-k-frequent-elements | [✓](Heap/347.top-k-frequent-elements.go) | [✓](Heap/347.top-k-frequent-elements.py) |  |
 | 973.k-closest-points-to-origin | [✓](Heap/973.k-closest-points-to-origin.go) |  |  |
+
+## LinkList
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 143.reorder-list | [✓](LinkList/143.reorder-list.go) | [✓](LinkList/143.reorder-list.py) |  |
+| 206.reverse-linked-list |  | [✓](LinkList/206.reverse-linked-list.py) |  |
+| 25.reverse-nodes-in-k-group | [✓](LinkList/25.reverse-nodes-in-k-group.go) | [✓](LinkList/25.reverse-nodes-in-k-group.py) |  |
 
 ## PrefixSum
 
@@ -157,6 +165,18 @@
 | 739.daily-temperatures |  | [✓](Stack/739.daily-temperatures.py) |  |
 | 84.largest-rectangle-in-histogram | [✓](Stack/84.largest-rectangle-in-histogram.go) | [✓](Stack/84.largest-rectangle-in-histogram.py) |  |
 | 921.minimum-add-to-make-parentheses-valid | [✓](Stack/921.minimum-add-to-make-parentheses-valid.go) | [✓](Stack/921.minimum-add-to-make-parentheses-valid.py) |  |
+
+## TopSort
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 207.course-schedule |  | [✓](TopSort/207.course-schedule.py) |  |
+
+## Tree
+
+|  name | go | py | ts |
+|-----------|----|---------|-----------|
+| 230.kth-smallest-element-in-a-bst |  | [✓](Tree/230.kth-smallest-element-in-a-bst.py) |  |
 
 ## TwoPointer
 
@@ -183,6 +203,7 @@
 | 1748.sum-of-unique-elements |  | [✓](TwoPointer/1748.sum-of-unique-elements.py) |  |
 | 1768.merge-strings-alternately |  | [✓](TwoPointer/1768.merge-strings-alternately.py) |  |
 | 1790.check-if-one-string-swap-can-make-strings-equal |  | [✓](TwoPointer/1790.check-if-one-string-swap-can-make-strings-equal.py) |  |
+| 187.repeated-dna-sequences |  | [✓](TwoPointer/187.repeated-dna-sequences.py) |  |
 | 19.remove-nth-node-from-end-of-list | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.go) | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.py) | [✓](TwoPointer/19.remove-nth-node-from-end-of-list.ts) |
 | 2.add-two-numbers | [✓](TwoPointer/2.add-two-numbers.go) | [✓](TwoPointer/2.add-two-numbers.py) | [✓](TwoPointer/2.add-two-numbers.ts) |
 | 20.valid-parentheses |  | [✓](TwoPointer/20.valid-parentheses.py) |  |
