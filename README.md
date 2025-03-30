@@ -251,6 +251,7 @@
 | 71.simplify-path |  | [✓](TwoPointer/71.simplify-path.py) |  |
 | 75.sort-colors | [✓](TwoPointer/75.sort-colors.go) | [✓](TwoPointer/75.sort-colors.py) |  |
 | 76.minimum-window-substring | [✓](TwoPointer/76.minimum-window-substring.go) | [✓](TwoPointer/76.minimum-window-substring.py) |  |
+| 763.partition-labels |  | [✓](TwoPointer/763.partition-labels.py) |  |
 | 766.toeplitz-matrix | [✓](TwoPointer/766.toeplitz-matrix.go) | [✓](TwoPointer/766.toeplitz-matrix.py) |  |
 | 791.custom-sort-string | [✓](TwoPointer/791.custom-sort-string.go) | [✓](TwoPointer/791.custom-sort-string.py) |  |
 | 8.string-to-integer-atoi | [✓](TwoPointer/8.string-to-integer-atoi.go) | [✓](TwoPointer/8.string-to-integer-atoi.py) |  |
