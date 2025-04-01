@@ -106,6 +106,7 @@
 | 139.word-break |  | [✓](DynamicProgramming/139.word-break.py) | [✓](DynamicProgramming/139.word-break.ts) |
 | 198.house-robber |  | [✓](DynamicProgramming/198.house-robber.py) |  |
 | 213.house-robber-ii |  | [✓](DynamicProgramming/213.house-robber-ii.py) |  |
+| 2140.solving-questions-with-brainpower |  | [✓](DynamicProgramming/2140.solving-questions-with-brainpower.py) |  |
 | 494.target-sum | [✓](DynamicProgramming/494.target-sum.go) | [✓](DynamicProgramming/494.target-sum.py) | [✓](DynamicProgramming/494.target-sum.ts) |
 | 516.longest-palindromic-subsequence |  | [✓](DynamicProgramming/516.longest-palindromic-subsequence.py) |  |
 | 62.unique-paths |  | [✓](DynamicProgramming/62.unique-paths.py) |  |
