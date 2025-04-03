@@ -126,6 +126,7 @@
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
 | 2873.maximum-value-of-an-ordered-triplet-i |  | [✓](Greedy/2873.maximum-value-of-an-ordered-triplet-i.py) |  |
+| 2874.maximum-value-of-an-ordered-triplet-ii |  | [✓](Greedy/2874.maximum-value-of-an-ordered-triplet-ii.py) |  |
 | 45.jump-game-ii |  | [✓](Greedy/45.jump-game-ii.py) |  |
 
 ## Heap
