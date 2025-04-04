@@ -53,7 +53,6 @@
 | 105.construct-binary-tree-from-preorder-and-inorder-traversal | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.go) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | [✓](DFS/105.construct-binary-tree-from-preorder-and-inorder-traversal.ts) |
 | 106.construct-binary-tree-from-inorder-and-postorder-traversal | [✓](DFS/106.construct-binary-tree-from-inorder-and-postorder-traversal.go) |  |  |
 | 110.balanced-binary-tree | [✓](DFS/110.balanced-binary-tree.go) | [✓](DFS/110.balanced-binary-tree.py) | [✓](DFS/110.balanced-binary-tree.ts) |
-| 1123.lowest-common-ancestor-of-deepest-leaves |  | [✓](DFS/1123.lowest-common-ancestor-of-deepest-leaves.py) |  |
 | 129.sum-root-to-leaf-numbers | [✓](DFS/129.sum-root-to-leaf-numbers.go) | [✓](DFS/129.sum-root-to-leaf-numbers.py) |  |
 | 133.clone-graph | [✓](DFS/133.clone-graph.go) | [✓](DFS/133.clone-graph.py) |  |
 | 139.word-break | [✓](DFS/139.word-break.go) |  |  |
@@ -179,6 +178,7 @@
 
 |  name | go | py | ts |
 |-----------|----|---------|-----------|
+| 1123.lowest-common-ancestor-of-deepest-leaves | [✓](Tree/1123.lowest-common-ancestor-of-deepest-leaves.go) | [✓](Tree/1123.lowest-common-ancestor-of-deepest-leaves.py) | [✓](Tree/1123.lowest-common-ancestor-of-deepest-leaves.ts) |
 | 230.kth-smallest-element-in-a-bst |  | [✓](Tree/230.kth-smallest-element-in-a-bst.py) |  |
 
 ## TwoPointer
